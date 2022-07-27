@@ -1,0 +1,68 @@
+name: flutter_build_production
+
+on: 
+  push:
+    tags:
+      - "v*.*.*" 
+
+jobs:
+  build:
+    name: Flutter Build Production (Android)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Decoding android/key.properties
+        run: echo "${{ secrets.KEY_PROD }}" | base64 --decode > android/key.properties
+
+      - name: Decoding android/keystore.jks
+        run: echo "${{ secrets.KEY_JKS }}" | base64 --decode > android/app/upload-keystore.jks   
+ 
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.0.5'
+          channel: "stable"  
+
+      - name: FLUTTER PUB GET    
+        run: flutter pub get
+
+      - name: FLUTTER CLEAN
+        run: flutter clean
+
+      - name: Build APK
+        run: flutter build apk --split-per-abi  lib/main.dart  
+        
+      - name: FLUTTER PRODUCTION BUILD BUNDLE
+        run: flutter build appbundle lib/main.dart
+
+      - name: Create github artifact release # disable this to save storage
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/flutter-apk/*.apk,build/app/outputs/bundle/*.aab"
+          token: ${{secrets.TOKEN}} # this is automatically provided by github
+
+      - name: Save APPBUNDLE to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: APPBUNDLE
+          path: build/app/outputs/bundle/app-release.aab
+
+  release_internal:
+    name: Release Artifacts to production track
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Get APPBUNDLE from Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: APPBUNDLE
+      - name: Release APPBUNDLE to production track
+        uses: r0adkll/upload-google-play@v1.0.15
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.PLAY_CONSOLE_JSON_KEY }}
+          packageName: com.sks.filegram
+          releaseFiles: app-release.aab
+          track: production
+          whatsNewDirectory: distribution/whatsnew          
+  
