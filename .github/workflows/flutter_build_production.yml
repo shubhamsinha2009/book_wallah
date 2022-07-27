@@ -61,7 +61,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1.0.15
         with:
           serviceAccountJsonPlainText: ${{ secrets.PLAY_CONSOLE_JSON_KEY }}
-          packageName: com.sks.filegram
+          packageName: com.sks.books_wallah
           releaseFiles: app-release.aab
           track: production
           whatsNewDirectory: distribution/whatsnew          
