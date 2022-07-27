@@ -38,14 +38,14 @@ jobs:
       - name: Create github artifact release # disable this to save storage
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "build/app/outputs/flutter-apk/*.apk,build/app/outputs/bundle/*.aab"
+          artifacts: "build/app/outputs/flutter-apk/*.apk,build/app/outputs/bundle/release/*.aab"
           token: ${{secrets.TOKEN}} # this is automatically provided by github
 
       - name: Save APPBUNDLE to Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: APPBUNDLE
-          path: build/app/outputs/bundle/app-release.aab
+          path: build/app/outputs/bundle/release/app-release.aab
 
   release_internal:
     name: Release Artifacts to production track
