@@ -1,10 +1,9 @@
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:books_wallah/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../Dashboard/views/dashboard_view.dart';
+import '../../../routes/app_pages.dart';
 
+import '../../dashboard/views/dashboard_view.dart';
 import '../../settings/views/settings_view.dart';
 import '../controllers/home_controller.dart';
 
