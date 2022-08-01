@@ -1,6 +1,4 @@
 import 'dart:io';
-
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:books_wallah/app/core/extensions.dart';
 import 'package:flutter/material.dart';
 

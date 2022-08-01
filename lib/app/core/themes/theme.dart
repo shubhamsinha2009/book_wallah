@@ -85,9 +85,9 @@ class Themes {
     brightness: Brightness.light,
     // primaryColor: Colors.red,
     // canvasColor: Colors.red,
-    appBarTheme: const AppBarTheme(
-      color: Colors.red,
-    ),
+    // appBarTheme: const AppBarTheme(
+    //   color: Colors.red,
+    // ),
     //scaffoldBackgroundColor: Colors.redAccent,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     snackBarTheme: const SnackBarThemeData(

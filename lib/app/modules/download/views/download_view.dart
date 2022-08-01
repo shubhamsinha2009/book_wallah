@@ -145,7 +145,7 @@ class DownloadView extends GetView<DownloadController> {
                                 },
                                 icon: const Icon(Icons.file_download),
                                 label: Text(
-                                    '${(controller.received.value / 1048576).toStringAsFixed(1)}/${(controller.total.value / 1048576).toStringAsFixed(1)} MB'),
+                                    '${controller.formatBytes(controller.received.value, 1)}/${controller.formatBytes(controller.total.value, 1)}'),
                               )
                         : OutlinedButton.icon(
                             onPressed: () async {

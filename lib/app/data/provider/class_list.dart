@@ -7,6 +7,7 @@ import 'class6/class.dart';
 import 'class7/class.dart';
 import 'class8/class.dart';
 import 'class9/class.dart';
+import 'msc_electronics/msc_electronics.dart';
 
 List<Class> classList = [
   Class(subjectList: class12, classNumber: 'Class 12'),
@@ -16,6 +17,6 @@ List<Class> classList = [
   Class(subjectList: class8, classNumber: 'Class 8'),
   Class(subjectList: class7, classNumber: 'Class 7'),
   Class(subjectList: class6, classNumber: 'Class 6'),
-  // Class(subjectList: mscElectronics, classNumber: 'MSc Electronics'),
+  Class(subjectList: mscElectronics, classNumber: 'M.Sc. Electronics'),
   // Class(subjectList: bsc_electronics, classNumber: 'Bsc Electronics'),
 ];

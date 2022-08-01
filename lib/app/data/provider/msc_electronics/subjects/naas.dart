@@ -1,66 +1,64 @@
-// import 'package:books_wallah/app/core/extensions.dart';
+import 'package:books_wallah/app/core/extensions.dart';
 
-// import '../../../model/books.dart';
-// import '../../../model/chapter.dart';
-// import '../../../model/links.dart';
+import '../../../model/books.dart';
+import '../../../model/chapter.dart';
+import '../../../model/links.dart';
 
-// List<Book> naas = [
-//   Book(
-//     bookName: "",
-//     className: 'Class 12',
-//     subject: 'Biology',
-//     chapters: [
-//       Chapter(chapterName: "Reproduction in Organisms ", links: [
-//         Link(number: 1, link: "lebo101".ncert),
-//       ]),
-//       Chapter(chapterName: "Sexual Reproduction in Flowering Plants ", links: [
-//         Link(number: 1, link: "lebo102".ncert),
-//       ]),
-//       Chapter(chapterName: "Human Reproduction", links: [
-//         Link(number: 1, link: "lebo103".ncert),
-//       ]),
-//       Chapter(chapterName: "Reproductive Health", links: [
-//         Link(number: 1, link: "lebo104".ncert),
-//       ]),
-//       Chapter(chapterName: "Principles of Inheritance and Variation", links: [
-//         Link(number: 1, link: "lebo105".ncert),
-//       ]),
-//       Chapter(chapterName: "Molecular Basis of Inheritance", links: [
-//         Link(number: 1, link: "lebo106".ncert),
-//       ]),
-//       Chapter(chapterName: "Evolution", links: [
-//         Link(number: 1, link: "lebo107".ncert),
-//       ]),
-//       Chapter(chapterName: "Human Health and Disease", links: [
-//         Link(number: 1, link: "lebo108".ncert),
-//       ]),
-//       Chapter(
-//         chapterName: "Strategies for Enhancement in Food Production",
-//         links: [
-//           Link(number: 1, link: "lebo109".ncert),
-//         ],
-//       ),
-//       Chapter(chapterName: "Microbes in Human Welfare", links: [
-//         Link(number: 1, link: "lebo110".ncert),
-//       ]),
-//       Chapter(chapterName: "Biotechnology : Principles and Processes", links: [
-//         Link(number: 1, link: "lebo111".ncert),
-//       ]),
-//       Chapter(chapterName: "Biotechnology and its Applications", links: [
-//         Link(number: 1, link: "lebo112".ncert),
-//       ]),
-//       Chapter(chapterName: "Organisms and Populations", links: [
-//         Link(number: 1, link: "lebo113".ncert),
-//       ]),
-//       Chapter(chapterName: "Ecosystem", links: [
-//         Link(number: 1, link: "lebo114".ncert),
-//       ]),
-//       Chapter(chapterName: "Biodiversity and Conservation", links: [
-//         Link(number: 1, link: "lebo115".ncert),
-//       ]),
-//       Chapter(chapterName: "Environmental Issues ", links: [
-//         Link(number: 1, link: "lebo116".ncert),
-//       ]),
-//     ],
-//   )
-// ];
+List<Book> naas = [
+  Book(
+    bookName: "S Bhattacharya",
+    className: 'M.Sc. Electronics',
+    subject: 'Network Analysis and Synthesis',
+    chapters: [
+      Chapter(chapterName: "Basic Concepts", links: [
+        Link(number: 1, link: "62e7a17bca02ah".uploadgram),
+      ]),
+      Chapter(chapterName: "Kirchhoff’s Laws,Mesh and Nodal Analysis", links: [
+        Link(number: 1, link: "62e7a17c4083ch".uploadgram),
+      ]),
+      Chapter(chapterName: "Steady State Analysis of AC Circuits", links: [
+        Link(number: 1, link: "62e7a17c811d8h".uploadgram),
+      ]),
+      Chapter(chapterName: "R–L–C Circuits and Resonance", links: [
+        Link(number: 1, link: "62e7a17cc1c7ah".uploadgram),
+      ]),
+      Chapter(chapterName: "Network Theorems and Applications", links: [
+        Link(number: 1, link: "62e7a17d230a7h".uploadgram),
+      ]),
+      Chapter(
+          chapterName:
+              "Transient Response of Circuits Using Differential Equations",
+          links: [
+            Link(number: 1, link: "62e7a17d53bd6h".uploadgram),
+          ]),
+      Chapter(chapterName: "Laplace Transform", links: [
+        Link(number: 1, link: "62e7a1838dbbah".uploadgram),
+      ]),
+      Chapter(
+          chapterName: "Transient Response of Circuits Using Laplace Transform",
+          links: [
+            Link(number: 1, link: "62e7a183d2f4dh".uploadgram),
+          ]),
+      Chapter(
+        chapterName: "Three-phase Systems and Circuits",
+        links: [
+          Link(number: 1, link: "62e7a1842c659h".uploadgram),
+        ],
+      ),
+      Chapter(
+          chapterName: "Network Functions − s-Domain Analysis of Circuits",
+          links: [
+            Link(number: 1, link: "62e7a184706aah".uploadgram),
+          ]),
+      Chapter(chapterName: "Two-port Network Parameters", links: [
+        Link(number: 1, link: "62e7a3103d938h".uploadgram),
+      ]),
+      Chapter(chapterName: "Network Synthesis and Realisability", links: [
+        Link(number: 1, link: "62e7a310a5789h".uploadgram),
+      ]),
+      Chapter(chapterName: "Filters and Attenuators", links: [
+        Link(number: 1, link: "62e7a311060dbh".uploadgram),
+      ]),
+    ],
+  )
+];

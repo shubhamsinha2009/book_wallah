@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 import 'package:books_wallah/app/data/model/chapter.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:get/get.dart';
@@ -56,6 +57,13 @@ class DownloadController extends GetxController {
     } finally {
       isLoading.value = false;
     }
+  }
+
+  String formatBytes(int bytes, int decimals) {
+    if (bytes <= 0) return "0 B";
+    const suffixes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+    var i = (log(bytes) / log(1024)).floor();
+    return '${(bytes / pow(1024, i)).toStringAsFixed(decimals)} ${suffixes[i]}';
   }
 
   Future<void> downloadFile(String filePath) async {
