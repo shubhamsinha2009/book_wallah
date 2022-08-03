@@ -62,5 +62,63 @@ List<Book> chemistry = [
         Link(number: 1, link: "lech207".ncert),
       ]),
     ],
+  ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    className: 'Class 12',
+    subject: 'Chemistry',
+    chapters: [
+      Chapter(chapterName: "The Solid State", links: [
+        Link(number: 1, link: "01".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Solutions", links: [
+        Link(number: 1, link: "02".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Electrochemistry", links: [
+        Link(number: 1, link: "03".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Chemical Kinetics", links: [
+        Link(number: 1, link: "04".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Surface Chemistry", links: [
+        Link(number: 1, link: "05".class12chemistryexemplar),
+      ]),
+      Chapter(
+          chapterName:
+              "General Principles and Processes of Isolation of Elements",
+          links: [
+            Link(number: 1, link: "06".class12chemistryexemplar),
+          ]),
+      Chapter(chapterName: "The p-Block Elements", links: [
+        Link(number: 1, link: "07".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "The d-and f-Block Elements", links: [
+        Link(number: 1, link: "08".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Coordination Compounds", links: [
+        Link(number: 1, link: "09".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Haloalkanes and Haloarenes", links: [
+        Link(number: 1, link: "10".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Alcohols, Phenols and Ethers", links: [
+        Link(number: 1, link: "11".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Aldehydes, Ketones and Carboxylic Acids", links: [
+        Link(number: 1, link: "12".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Amines", links: [
+        Link(number: 1, link: "13".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Biomolecules", links: [
+        Link(number: 1, link: "14".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Polymers", links: [
+        Link(number: 1, link: "15".class12chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Chemistry in Everyday Life", links: [
+        Link(number: 1, link: "16".class12chemistryexemplar),
+      ]),
+    ],
   )
 ];

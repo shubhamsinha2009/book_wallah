@@ -99,4 +99,87 @@ List<Book> maths = [
       ),
     ],
   ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    subject: 'Mathematics',
+    className: 'Class 7',
+    chapters: [
+      Chapter(
+        chapterName: 'Integers',
+        links: [
+          Link(number: 1, link: '01'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Fractions and Decimals',
+        links: [Link(number: 1, link: '02'.class7mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Data Handling',
+        links: [
+          Link(number: 1, link: '03'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Simple Equations',
+        links: [
+          Link(number: 1, link: '04'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Lines and Angles',
+        links: [
+          Link(number: 1, link: '05'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Triangles',
+        links: [
+          Link(number: 1, link: '06'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Comparing Quantities',
+        links: [
+          Link(number: 1, link: '07'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Rational Numbers',
+        links: [
+          Link(number: 1, link: '08'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Perimeter and Area',
+        links: [
+          Link(number: 1, link: '09'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Algebraic Expressions',
+        links: [
+          Link(number: 1, link: '10'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Exponents and Powers',
+        links: [
+          Link(number: 1, link: '11'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Practical Geometry Symmetry & Visualising Solid Shapes',
+        links: [
+          Link(number: 1, link: '12'.class7mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Answers',
+        links: [
+          Link(number: 1, link: 'a1'.class7mathsexemplar),
+        ],
+      ),
+    ],
+  ),
 ];

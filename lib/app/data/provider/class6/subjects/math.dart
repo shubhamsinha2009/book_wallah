@@ -93,4 +93,69 @@ List<Book> maths = [
       ),
     ],
   ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    subject: 'Mathematics',
+    className: 'Class 6',
+    chapters: [
+      Chapter(
+        chapterName: 'NUMBER SYSTEM',
+        links: [
+          Link(number: 1, link: '01'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'GEOMETRY',
+        links: [Link(number: 1, link: '02'.class6mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'INTEGERS',
+        links: [
+          Link(number: 1, link: '03'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Fractions & Decimals',
+        links: [
+          Link(number: 1, link: '04'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Data Handling',
+        links: [
+          Link(number: 1, link: '05'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'MENSURATION',
+        links: [
+          Link(number: 1, link: '06'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'ALGEBRA',
+        links: [
+          Link(number: 1, link: '07'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'RATIO AND PROPORTION',
+        links: [
+          Link(number: 1, link: '08'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'SYMMETRY & PRACTICAL GEOMETRY',
+        links: [
+          Link(number: 1, link: '09'.class6mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Answer',
+        links: [
+          Link(number: 1, link: 'an'.class6mathsexemplar),
+        ],
+      ),
+    ],
+  ),
 ];

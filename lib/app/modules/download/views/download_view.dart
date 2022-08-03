@@ -118,6 +118,13 @@ class DownloadView extends GetView<DownloadController> {
                 const SizedBox(
                   height: 10,
                 ),
+                const Text(
+                  'Change Source Link if not working',
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
                 controller.isLoading.isFalse
                     ? controller.getDetails.isFalse
                         ? File(controller.bookPath).existsSync()

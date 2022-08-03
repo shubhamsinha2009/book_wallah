@@ -56,5 +56,60 @@ List<Book> physics = [
         Link(number: 1, link: "keph207".ncert),
       ]),
     ],
-  )
+  ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    className: 'Class 11',
+    subject: 'Physics',
+    chapters: [
+      Chapter(chapterName: "INTRODUCTION", links: [
+        Link(number: 1, link: "01".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "UNITS AND MEASUREMENTS", links: [
+        Link(number: 1, link: "02".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "MOTION IN A STRAIGHT LINE", links: [
+        Link(number: 1, link: "03".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "MOTION IN A PLANE", links: [
+        Link(number: 1, link: "04".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "LAWS OF MOTION", links: [
+        Link(number: 1, link: "05".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "WORK, ENERGY AND POWER", links: [
+        Link(number: 1, link: "06".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "SYSTEM OF PARTICLES AND ROTATIONAL MOTION", links: [
+        Link(number: 1, link: "07".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "GRAVITATION", links: [
+        Link(number: 1, link: "08".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "MECHANICAL PROPERTIES OF SOLIDS", links: [
+        Link(number: 1, link: "09".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "MECHANICAL PROPERTIES OF FLUIDS", links: [
+        Link(number: 1, link: "10".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "THERMAL PROPERTIES OF MATTER", links: [
+        Link(number: 1, link: "11".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "THERMODYNAMICS", links: [
+        Link(number: 1, link: "12".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "KINETIC THEORY", links: [
+        Link(number: 1, link: "13".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "OSCILLATIONS", links: [
+        Link(number: 1, link: "14".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "WAVES", links: [
+        Link(number: 1, link: "15".class11physicsexemplar),
+      ]),
+      Chapter(chapterName: "ANSWER", links: [
+        Link(number: 1, link: "16".class11physicsexemplar),
+      ]),
+    ],
+  ),
 ];

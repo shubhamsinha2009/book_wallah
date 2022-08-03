@@ -59,10 +59,74 @@ List<Book> science = [
         Link(number: 1, link: "hesc116".ncert),
       ]),
       Chapter(chapterName: "STARS AND THE SOLAR SYSTEM", links: [
-        Link(number: 1, link: "hesc1an".ncert),
+        Link(number: 1, link: "hesc117".ncert),
       ]),
       Chapter(chapterName: "POLLUTION OF AIR AND WATER", links: [
-        Link(number: 1, link: "hesc1an".ncert),
+        Link(number: 1, link: "hesc118".ncert),
+      ]),
+    ],
+  ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    className: 'Class 8',
+    subject: 'Science',
+    chapters: [
+      Chapter(chapterName: "CROP PRODUCTION AND MANAGEMENT", links: [
+        Link(number: 1, link: "01".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "MICROORGANISMS : FRIEND AND FOE", links: [
+        Link(number: 1, link: "02".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "SYNTHETIC FIBRES AND PLASTICS", links: [
+        Link(number: 1, link: "03".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "MATERIALS : METALS AND NON-METALS", links: [
+        Link(number: 1, link: "04".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "COAL AND PETROLEUM", links: [
+        Link(number: 1, link: "05".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "COMBUSTION AND FLAME", links: [
+        Link(number: 1, link: "06".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "CONSERVATION OF PLANTS AND ANIMALS", links: [
+        Link(number: 1, link: "07".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "CELL — STRUCTURE AND FUNCTIONS", links: [
+        Link(number: 1, link: "08".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "REPRODUCTION IN ANIMALS", links: [
+        Link(number: 1, link: "09".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "REACHING THE AGE OF ADOLESCENCE", links: [
+        Link(number: 1, link: "10".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "FORCE AND PRESSURE", links: [
+        Link(number: 1, link: "11".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "FRICTION ", links: [
+        Link(number: 1, link: "12".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "SOUND", links: [
+        Link(number: 1, link: "13".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "CHEMICAL EFFECTS OF ELECTRIC CURRENT", links: [
+        Link(number: 1, link: "14".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "SOME NATURAL PHENOMENA", links: [
+        Link(number: 1, link: "15".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "LIGHT", links: [
+        Link(number: 1, link: "16".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "STARS AND THE SOLAR SYSTEM", links: [
+        Link(number: 1, link: "17".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "POLLUTION OF AIR AND WATER", links: [
+        Link(number: 1, link: "18".class8scienceexemplar),
+      ]),
+      Chapter(chapterName: "Answers", links: [
+        Link(number: 1, link: "an".class8scienceexemplar),
       ]),
     ],
   )

@@ -61,5 +61,62 @@ List<Book> science = [
         Link(number: 1, link: "fesc116".ncert),
       ]),
     ],
+  ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    className: 'Class 6',
+    subject: 'Science',
+    chapters: [
+      Chapter(chapterName: "FOOD: WHERE DOES IT COME FROM?", links: [
+        Link(number: 1, link: "01".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "COMPONENTS OF FOOD", links: [
+        Link(number: 1, link: "02".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "FIBRE TO FABRIC", links: [
+        Link(number: 1, link: "03".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "SORTING MATERIALS INTO GROUPS", links: [
+        Link(number: 1, link: "04".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "SEPARATION OF SUBSTANCES", links: [
+        Link(number: 1, link: "05".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "CHANGES AROUND US", links: [
+        Link(number: 1, link: "06".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "GETTING TO KNOW PLANTS", links: [
+        Link(number: 1, link: "07".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "BODY MOVEMENTS", links: [
+        Link(number: 1, link: "08".class6scienceexemplar),
+      ]),
+      Chapter(
+          chapterName: "THE LIVING ORGANISMS — CHARACTERISTICS AND HABITATS",
+          links: [
+            Link(number: 1, link: "09".class6scienceexemplar),
+          ]),
+      Chapter(chapterName: "MOTION AND MEASUREMENT OF DISTANCES", links: [
+        Link(number: 1, link: "10".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "LIGHT, SHADOWS AND REFLECTIONS", links: [
+        Link(number: 1, link: "11".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "ELECTRICITY AND CIRCUITS", links: [
+        Link(number: 1, link: "12".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "FUN WITH MAGNETS", links: [
+        Link(number: 1, link: "13".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "WATER", links: [
+        Link(number: 1, link: "14".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "AIR AROUND US", links: [
+        Link(number: 1, link: "15".class6scienceexemplar),
+      ]),
+      Chapter(chapterName: "GARBAGE IN, GARBAGE OUT", links: [
+        Link(number: 1, link: "16".class6scienceexemplar),
+      ]),
+    ],
   )
 ];

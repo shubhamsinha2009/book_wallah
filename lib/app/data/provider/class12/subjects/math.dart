@@ -67,4 +67,69 @@ List<Book> maths = [
       ),
     ],
   ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    subject: 'Mathematics',
+    className: 'Class 12',
+    chapters: [
+      Chapter(
+        chapterName: 'Relations and Functions',
+        links: [
+          Link(number: 1, link: '01'.class12mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Inverse Trigonometric Functions',
+        links: [Link(number: 1, link: '02'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Matrices',
+        links: [Link(number: 1, link: '03'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Determinants',
+        links: [Link(number: 1, link: '04'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Continuity and Differentiability',
+        links: [Link(number: 1, link: '05'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Application of Derivatives',
+        links: [Link(number: 1, link: '06'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Integrals',
+        links: [Link(number: 1, link: '07'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Application of Integrals',
+        links: [Link(number: 1, link: '08'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Differential Equations',
+        links: [Link(number: 1, link: '09'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Vector Algebra',
+        links: [Link(number: 1, link: '10'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Three Dimensional Geometry',
+        links: [Link(number: 1, link: '11'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Linear Programming',
+        links: [Link(number: 1, link: '12'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Probability',
+        links: [Link(number: 1, link: '13'.class12mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Answer',
+        links: [Link(number: 1, link: '16'.class12mathsexemplar)],
+      ),
+    ],
+  ),
 ];

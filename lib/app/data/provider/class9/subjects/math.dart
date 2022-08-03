@@ -105,4 +105,99 @@ List<Book> maths = [
       ),
     ],
   ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    subject: 'Mathematics',
+    className: 'Class 9',
+    chapters: [
+      Chapter(
+        chapterName: 'NUMBER SYSTEMS',
+        links: [
+          Link(number: 1, link: '01'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'POLYNOMIALS',
+        links: [Link(number: 1, link: '02'.class9mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'COORDINATE GEOMETRY',
+        links: [
+          Link(number: 1, link: '03'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'LINEAR EQUATIONS IN TWO VARIABLES ',
+        links: [
+          Link(number: 1, link: '04'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'INTRODUCTION TO EUCLID’S GEOMETRY',
+        links: [
+          Link(number: 1, link: '05'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'LINES AND ANGLES',
+        links: [
+          Link(number: 1, link: '06'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'TRIANGLES',
+        links: [
+          Link(number: 1, link: '07'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'QUADRILATERALS',
+        links: [
+          Link(number: 1, link: '08'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'AREAS OF PARALLELOGRAMS AND TRIANGLES',
+        links: [
+          Link(number: 1, link: '09'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'CIRCLES',
+        links: [
+          Link(number: 1, link: '10'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Constructions',
+        links: [
+          Link(number: 1, link: '11'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'HERON’S FORMULA',
+        links: [
+          Link(number: 1, link: '12'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'SURFACE AREAS AND VOLUMES',
+        links: [
+          Link(number: 1, link: '13'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'STATISTICS & PROBABILITY',
+        links: [
+          Link(number: 1, link: '14'.class9mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Answers',
+        links: [
+          Link(number: 1, link: 'an'.class9mathsexemplar),
+        ],
+      ),
+    ],
+  ),
 ];

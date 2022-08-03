@@ -111,4 +111,93 @@ List<Book> maths = [
       ),
     ],
   ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    subject: 'Mathematics',
+    className: 'Class 8',
+    chapters: [
+      Chapter(
+        chapterName: 'Rational Numbers',
+        links: [
+          Link(number: 1, link: '01'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Data Handling',
+        links: [
+          Link(number: 1, link: '02'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Square-Square Roots & Cube-Cube Roots',
+        links: [
+          Link(number: 1, link: '03'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Linear Equations in One Variable',
+        links: [Link(number: 1, link: '04'.class8mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Understanding Quadrilaterals & Practical Geometry',
+        links: [
+          Link(number: 1, link: '05'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Visualising Solid Shapes',
+        links: [
+          Link(number: 1, link: '06'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Algebraic Expressions, Identities & Factorisation',
+        links: [
+          Link(number: 1, link: '07'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Exponents and Powers',
+        links: [
+          Link(number: 1, link: '08'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Comparing Quantities ',
+        links: [
+          Link(number: 1, link: '09'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Direct and Inverse Proportions',
+        links: [
+          Link(number: 1, link: '10'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Mensuration',
+        links: [
+          Link(number: 1, link: '11'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Introduction to Graphs',
+        links: [
+          Link(number: 1, link: '12'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Playing with Numbers',
+        links: [
+          Link(number: 1, link: '13'.class8mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Answers',
+        links: [
+          Link(number: 1, link: 'an'.class8mathsexemplar),
+        ],
+      ),
+    ],
+  ),
 ];

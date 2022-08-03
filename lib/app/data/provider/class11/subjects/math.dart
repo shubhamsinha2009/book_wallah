@@ -83,4 +83,81 @@ List<Book> maths = [
       ),
     ],
   ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    subject: 'Mathematics',
+    className: 'Class 11',
+    chapters: [
+      Chapter(
+        chapterName: 'Sets',
+        links: [
+          Link(number: 1, link: '01'.class11mathsexemplar),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Relations and Functions',
+        links: [Link(number: 1, link: '02'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Trigonometric Functions',
+        links: [Link(number: 1, link: '03'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Principle of Mathematical Induction',
+        links: [Link(number: 1, link: '04'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Complex Numbers and Quadratic Equations',
+        links: [Link(number: 1, link: '05'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Linear Inequalities',
+        links: [Link(number: 1, link: '06'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Permutations and Combinations',
+        links: [Link(number: 1, link: '07'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Binomial Theorem',
+        links: [Link(number: 1, link: '08'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Sequences and Series',
+        links: [Link(number: 1, link: '09'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Straight Lines',
+        links: [Link(number: 1, link: '10'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Conic Sections',
+        links: [Link(number: 1, link: '11'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Introduction to Three Dimensional Geometry',
+        links: [Link(number: 1, link: '12'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Limits and Derivatives',
+        links: [Link(number: 1, link: '13'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Mathematical Reasoning',
+        links: [Link(number: 1, link: '14'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Statistics',
+        links: [Link(number: 1, link: '15'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Probability',
+        links: [Link(number: 1, link: '16'.class11mathsexemplar)],
+      ),
+      Chapter(
+        chapterName: 'Answers',
+        links: [Link(number: 1, link: '17'.class11mathsexemplar)],
+      ),
+    ],
+  ),
 ];

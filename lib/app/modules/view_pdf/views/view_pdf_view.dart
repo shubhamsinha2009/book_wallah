@@ -205,11 +205,11 @@ class ViewPdfView extends GetView<ViewPdfController> {
             pageSnap: false,
             nightMode: controller.homeController.changeTheme.value,
             fitEachPage: true,
-            fitPolicy: FitPolicy.both,
+            fitPolicy: FitPolicy.width,
             defaultPage: controller.intialPageNumber,
             minZoom: 1,
             maxZoom: 5,
-            enableDefaultScrollHandle: true,
+            enableDefaultScrollHandle: false,
             onRender: (_pages) {
               // controller.isReady.value = true;
 

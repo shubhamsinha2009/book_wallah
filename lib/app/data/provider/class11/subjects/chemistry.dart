@@ -59,5 +59,60 @@ List<Book> chemistry = [
         Link(number: 1, link: "lech207".ncert),
       ]),
     ],
+  ),
+  Book(
+    bookName: "NCERT EXEMPLAR",
+    className: 'Class 11',
+    subject: 'Chemistry',
+    chapters: [
+      Chapter(chapterName: "SOME BASIC CONCEPTS OF CHEMISTRY", links: [
+        Link(number: 1, link: "01".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "STRUCTURE OF ATOM", links: [
+        Link(number: 1, link: "02".class11chemistryexemplar),
+      ]),
+      Chapter(
+          chapterName:
+              "CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES",
+          links: [
+            Link(number: 1, link: "03".class11chemistryexemplar),
+          ]),
+      Chapter(chapterName: "CHEMICAL BONDING AND MOLECULAR STRUCTURE", links: [
+        Link(number: 1, link: "04".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "STATES OF MATTER", links: [
+        Link(number: 1, link: "05".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "THERMODYNAMICS", links: [
+        Link(number: 1, link: "06".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "EQUILIBRIUM", links: [
+        Link(number: 1, link: "07".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Redox Reactions", links: [
+        Link(number: 1, link: "08".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Hydrogen", links: [
+        Link(number: 1, link: "09".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "The s-Block Elements", links: [
+        Link(number: 1, link: "10".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "The p-Block Elements", links: [
+        Link(number: 1, link: "11".class11chemistryexemplar),
+      ]),
+      Chapter(
+          chapterName:
+              "Organic Chemistry – Some Basic Principles and Techniques",
+          links: [
+            Link(number: 1, link: "12".class11chemistryexemplar),
+          ]),
+      Chapter(chapterName: "Hydrocarbons", links: [
+        Link(number: 1, link: "13".class11chemistryexemplar),
+      ]),
+      Chapter(chapterName: "Environmental Chemistry", links: [
+        Link(number: 1, link: "14".class11chemistryexemplar),
+      ]),
+    ],
   )
 ];
