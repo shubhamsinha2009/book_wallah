@@ -67,7 +67,7 @@ class DownloadController extends GetxController {
   }
 
   Future<void> downloadFile(String filePath) async {
-    final _file = File(filePath);
+    final file = File(filePath);
     try {
       if (response.statusCode == 400) {
         getDetails.value = true;
@@ -83,7 +83,7 @@ class DownloadController extends GetxController {
           received.value += value.length;
         }).onDone(() async {
           if (total.value == received.value) {
-            await _file.writeAsBytes(_bytes);
+            await file.writeAsBytes(_bytes);
           } else {
             getDetails.value = true;
             received.value = 0;
@@ -119,19 +119,18 @@ class DownloadController extends GetxController {
     //Get this App Document Directory
     //App Document Directory + folder name
 
-    final Directory? _appDocDir = await getExternalStorageDirectory();
+    final Directory? appDocDir = await getExternalStorageDirectory();
     //App Document Directory + folder name
-    final Directory _appDocDirFolder =
-        Directory('${_appDocDir?.path}/Downloads');
+    final Directory appDocDirFolder = Directory('${appDocDir?.path}/Downloads');
 
-    if (await _appDocDirFolder.exists()) {
+    if (await appDocDirFolder.exists()) {
       //if folder already exists return path
-      return _appDocDirFolder.path;
+      return appDocDirFolder.path;
     } else {
       //if folder not exists create folder and then return its path
-      final Directory _appDocDirNewFolder =
-          await _appDocDirFolder.create(recursive: true);
-      return _appDocDirNewFolder.path;
+      final Directory appDocDirNewFolder =
+          await appDocDirFolder.create(recursive: true);
+      return appDocDirNewFolder.path;
     }
   }
 

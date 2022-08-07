@@ -71,9 +71,7 @@ class BooksView extends GetView<BooksController> {
           //         ),
           // ),
           Expanded(
-            child: Obx(() => GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                      childAspectRatio: 2, maxCrossAxisExtent: 250),
+            child: Obx(() => ListView.builder(
                   itemCount: controller.bookList.length,
                   itemBuilder: (context, index) => Obx(
                     () => GestureDetector(

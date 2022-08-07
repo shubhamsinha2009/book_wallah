@@ -71,9 +71,7 @@ class SubjectView extends GetView<SubjectController> {
           //         ),
           // ),
           Expanded(
-            child: Obx(() => GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                      childAspectRatio: 2, maxCrossAxisExtent: 250),
+            child: Obx(() => ListView.builder(
                   itemCount: controller.subjectList.length,
                   itemBuilder: (context, index) => Obx(
                     () => GestureDetector(

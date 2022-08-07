@@ -97,14 +97,14 @@ class BookPageView extends GetView<BookPageController> {
                         //         ad: controller.inlineBannerAd!),
                         //   );
                         // } else {
-                        String _bookPath =
+                        String bookPath =
                             '${controller.pathDir}/${controller.chapterList[index].chapterName}.pdf';
                         return ListTile(
                           title:
                               Text(controller.chapterList[index].chapterName),
                           leading: Text('${index + 1}.',
                               softWrap: true, textScaleFactor: 1.5),
-                          onLongPress: (() => File(_bookPath).existsSync()
+                          onLongPress: (() => File(bookPath).existsSync()
                               ? Get.dialog(
                                   AlertDialog(
                                     backgroundColor: Get.isDarkMode
@@ -127,7 +127,7 @@ class BookPageView extends GetView<BookPageController> {
                                           if (Get.isOverlaysOpen) {
                                             Get.back();
                                           }
-                                          File(_bookPath).delete().then(
+                                          File(bookPath).delete().then(
                                               (value) =>
                                                   Get.showSnackbar(GetSnackBar(
                                                     backgroundColor: Get
@@ -159,15 +159,15 @@ class BookPageView extends GetView<BookPageController> {
                                 ))),
                           // leading: Text('${index + 1}'),
                           onTap: () {
-                            if (File(_bookPath).existsSync()) {
+                            if (File(bookPath).existsSync()) {
                               // controller
                               //     .showInterstitialAd()
                               //     .catchError((e) {});
-                              Get.toNamed(Routes.viewPdf, arguments: _bookPath);
+                              Get.toNamed(Routes.viewPdf, arguments: bookPath);
                             } else {
                               Get.toNamed(Routes.download, arguments: [
                                 controller.chapterList[index],
-                                _bookPath
+                                bookPath
                               ]);
                             }
                           },

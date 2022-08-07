@@ -102,18 +102,18 @@ class DownloadedView extends GetView<DownloadedController> {
                               //         ad: controller.inlineBannerAd),
                               //   );
                               // } else {
-                              final _currentfile =
+                              final currentfile =
                                   controller.filesList[index] as File;
                               return ListTile(
                                 title: Text(
-                                  _currentfile.name.split('.').first,
+                                  currentfile.name.split('.').first,
                                   softWrap: true,
                                   overflow: TextOverflow.visible,
                                 ),
                                 subtitle: Text(
-                                  '${_currentfile.parent.parent.parent.name} - ${_currentfile.parent.parent.name} - ${_currentfile.parent.name}\n${controller.getSubtitle(
-                                    bytes: _currentfile.lengthSync(),
-                                    time: _currentfile.lastModifiedSync(),
+                                  '${currentfile.parent.parent.parent.name} - ${currentfile.parent.parent.name} - ${currentfile.parent.name}\n${controller.getSubtitle(
+                                    bytes: currentfile.lengthSync(),
+                                    time: currentfile.lastModifiedSync(),
                                   )}',
                                   maxLines: 2,
                                   softWrap: true,
@@ -128,7 +128,7 @@ class DownloadedView extends GetView<DownloadedController> {
                                             ? Colors.black
                                             : Colors.white,
                                         title: Text(
-                                          'Are you sure you wish to delete ${_currentfile.name}?',
+                                          'Are you sure you wish to delete ${currentfile.name}?',
                                         ),
                                         actions: <Widget>[
                                           TextButton(
@@ -144,7 +144,7 @@ class DownloadedView extends GetView<DownloadedController> {
                                               if (Get.isOverlaysOpen) {
                                                 Get.back();
                                               }
-                                              File(_currentfile.path)
+                                              File(currentfile.path)
                                                   .delete()
                                                   .then((value) {
                                                 controller.onInitialisation();
@@ -178,7 +178,7 @@ class DownloadedView extends GetView<DownloadedController> {
                                   //     .showInterstitialAd()
                                   //     .catchError((e) {});
                                   Get.toNamed(Routes.viewPdf,
-                                      arguments: _currentfile.path);
+                                      arguments: currentfile.path);
                                 },
                               );
                               //}

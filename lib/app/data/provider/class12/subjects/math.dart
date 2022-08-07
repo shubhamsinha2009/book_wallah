@@ -3,8 +3,6 @@ import 'package:books_wallah/app/data/model/books.dart';
 import 'package:books_wallah/app/data/model/chapter.dart';
 import 'package:books_wallah/app/data/model/links.dart';
 
-//TODO: Neha Mam Pdfs
-//TODO: vedantu , etc
 List<Book> maths = [
   Book(
     bookName: "NCERT 2022-2023",

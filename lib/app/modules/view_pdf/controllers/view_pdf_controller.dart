@@ -209,10 +209,10 @@ class ViewPdfController extends GetxController {
   void onInit() async {
     filePath = Get.arguments;
 
-    final Map<String, dynamic>? _pdfDetails =
+    final Map<String, dynamic>? pdfDetails =
         GetStorageDbService.getRead(key: filePath);
-    intialPageNumber = _pdfDetails?['intialPageNumber'] ?? 0;
-    swipehorizontal.value = _pdfDetails?['swipehorizontal'] ?? false;
+    intialPageNumber = pdfDetails?['intialPageNumber'] ?? 0;
+    swipehorizontal.value = pdfDetails?['swipehorizontal'] ?? false;
     currentPage.value = intialPageNumber;
     pagesChanged.add(currentPage.value);
     //  intialZoomFactor = _pdfDetails?['intialZoomFactor'] ?? 1.0;
@@ -266,11 +266,11 @@ class ViewPdfController extends GetxController {
     //  bottomBannerAd.dispose();
     // rewardedInterstitialAd?.dispose();
     // }
-    final Map<String, dynamic> _pdfDetails = {
+    final Map<String, dynamic> pdfDetails = {
       'intialPageNumber': intialPageNumber,
       'swipehorizontal': swipehorizontal.value,
       // 'intialZoomFactor': intialZoomFactor,
     };
-    GetStorageDbService.getWrite(key: filePath, value: _pdfDetails);
+    GetStorageDbService.getWrite(key: filePath, value: pdfDetails);
   }
 }
