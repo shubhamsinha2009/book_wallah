@@ -155,7 +155,7 @@ class SettingsView extends GetView<SettingsController> {
             },
             leading: const Icon(Icons.feedback),
             title: const Text(
-              'Feedback',
+              'Feedback - Tell Books You Need',
               style: TextStyle(
                 fontWeight: FontWeight.w500,
               ),

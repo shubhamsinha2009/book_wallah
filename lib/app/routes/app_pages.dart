@@ -2,8 +2,6 @@ import 'package:get/get.dart';
 
 import '../modules/book_page/bindings/book_page_binding.dart';
 import '../modules/book_page/views/book_page_view.dart';
-import '../modules/books/bindings/books_binding.dart';
-import '../modules/books/views/books_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/download/bindings/download_binding.dart';
 import '../modules/download/views/download_view.dart';
@@ -12,8 +10,7 @@ import '../modules/downloaded/views/downloaded_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
-import '../modules/subject/bindings/subject_binding.dart';
-import '../modules/subject/views/subject_view.dart';
+
 import '../modules/view_pdf/bindings/view_pdf_binding.dart';
 import '../modules/view_pdf/views/view_pdf_view.dart';
 import '../modules/whatsapp_chat/bindings/whatsapp_chat_binding.dart';
@@ -48,18 +45,7 @@ class AppPages {
       binding: WhatsappChatBinding(),
       transition: Transition.rightToLeft,
     ),
-    GetPage(
-      name: _Paths.subject,
-      page: () => const SubjectView(),
-      binding: SubjectBinding(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(
-      name: _Paths.books,
-      page: () => const BooksView(),
-      transition: Transition.rightToLeft,
-      binding: BooksBinding(),
-    ),
+    
     GetPage(
       name: _Paths.bookPage,
       page: () => const BookPageView(),

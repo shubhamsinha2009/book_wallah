@@ -5,16 +5,17 @@ class Themes {
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Colors.white,
     ),
-    chipTheme: const ChipThemeData(
-        backgroundColor: Colors.black,
-        disabledColor: Colors.transparent,
-        selectedColor: Colors.black,
-        secondarySelectedColor: Colors.black,
-        padding: EdgeInsets.all(5),
-        shape: StadiumBorder(side: BorderSide(color: Colors.white)),
-        labelStyle: TextStyle(color: Colors.white),
-        secondaryLabelStyle: TextStyle(color: Colors.white),
-        brightness: Brightness.dark),
+    // chipTheme: const ChipThemeData(
+    //   backgroundColor: Colors.white,
+    //   disabledColor: Colors.transparent,
+    //   selectedColor: Colors.white,
+    //   secondarySelectedColor: Colors.white,
+    //   padding: EdgeInsets.all(5),
+    //   shape: StadiumBorder(side: BorderSide(color: Colors.white)),
+    //   labelStyle: TextStyle(color: Colors.white),
+    //   secondaryLabelStyle: TextStyle(color: Colors.black),
+    //   brightness: Brightness.dark,
+    // ),
     dividerColor: Colors.white,
     dividerTheme: const DividerThemeData(color: Colors.white),
     inputDecorationTheme: const InputDecorationTheme(
@@ -89,6 +90,7 @@ class Themes {
     //   color: Colors.red,
     // ),
     //scaffoldBackgroundColor: Colors.redAccent,
+
     visualDensity: VisualDensity.adaptivePlatformDensity,
     snackBarTheme: const SnackBarThemeData(
       backgroundColor: Colors.blue,

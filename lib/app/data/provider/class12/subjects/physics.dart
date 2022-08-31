@@ -11,49 +11,49 @@ List<Book> physics = [
     subject: 'Physics',
     chapters: [
       Chapter(chapterName: "ELECTRIC CHARGES AND FIELDS", links: [
-        Link(number: 1, link: "leph101".ncert),
+        Linkurl(number: 1, link: "leph101".ncert),
       ]),
       Chapter(chapterName: "ELECTROSTATIC POTENTIAL AND CAPACITANCE", links: [
-        Link(number: 1, link: "leph102".ncert),
+        Linkurl(number: 1, link: "leph102".ncert),
       ]),
       Chapter(chapterName: "CURRENT ELECTRICITY", links: [
-        Link(number: 1, link: "leph103".ncert),
+        Linkurl(number: 1, link: "leph103".ncert),
       ]),
       Chapter(chapterName: "MOVING CHARGES AND MAGNETISM", links: [
-        Link(number: 1, link: "leph104".ncert),
+        Linkurl(number: 1, link: "leph104".ncert),
       ]),
       Chapter(chapterName: "MAGNETISM AND MATTER", links: [
-        Link(number: 1, link: "leph105".ncert),
+        Linkurl(number: 1, link: "leph105".ncert),
       ]),
       Chapter(chapterName: "ELECTROMAGNETIC INDUCTION", links: [
-        Link(number: 1, link: "leph106".ncert),
+        Linkurl(number: 1, link: "leph106".ncert),
       ]),
       Chapter(chapterName: "ALTERNATING CURRENT", links: [
-        Link(number: 1, link: "leph107".ncert),
+        Linkurl(number: 1, link: "leph107".ncert),
       ]),
       Chapter(chapterName: "ELECTROMAGNETIC WAVES", links: [
-        Link(number: 1, link: "leph108".ncert),
+        Linkurl(number: 1, link: "leph108".ncert),
       ]),
       Chapter(chapterName: "RAY OPTICS AND OPTICAL INSTRUMENTS", links: [
-        Link(number: 1, link: "leph201".ncert),
+        Linkurl(number: 1, link: "leph201".ncert),
       ]),
       Chapter(chapterName: "WAVE OPTICS", links: [
-        Link(number: 1, link: "leph202".ncert),
+        Linkurl(number: 1, link: "leph202".ncert),
       ]),
       Chapter(chapterName: "DUAL NATURE OF RADIATION AND MATTER", links: [
-        Link(number: 1, link: "leph203".ncert),
+        Linkurl(number: 1, link: "leph203".ncert),
       ]),
       Chapter(chapterName: "ATOMS", links: [
-        Link(number: 1, link: "leph204".ncert),
+        Linkurl(number: 1, link: "leph204".ncert),
       ]),
       Chapter(chapterName: "NUCLEI", links: [
-        Link(number: 1, link: "leph205".ncert),
+        Linkurl(number: 1, link: "leph205".ncert),
       ]),
       Chapter(
           chapterName:
               "SEMICONDUCTOR ELECTRONICS: MATERIALS, DEVICES AND SIMPLE CIRCUITS",
           links: [
-            Link(number: 1, link: "leph206".ncert),
+            Linkurl(number: 1, link: "leph206".ncert),
           ]),
     ],
   ),
@@ -63,52 +63,52 @@ List<Book> physics = [
     subject: 'Physics',
     chapters: [
       Chapter(chapterName: "ELECTRIC CHARGES AND FIELDS", links: [
-        Link(number: 1, link: "01".class12physicsexemplar),
+        Linkurl(number: 1, link: "01".class12physicsexemplar),
       ]),
       Chapter(chapterName: "ELECTROSTATIC POTENTIAL AND CAPACITANCE", links: [
-        Link(number: 1, link: "02".class12physicsexemplar),
+        Linkurl(number: 1, link: "02".class12physicsexemplar),
       ]),
       Chapter(chapterName: "CURRENT ELECTRICITY", links: [
-        Link(number: 1, link: "03".class12physicsexemplar),
+        Linkurl(number: 1, link: "03".class12physicsexemplar),
       ]),
       Chapter(chapterName: "MOVING CHARGES AND MAGNETISM", links: [
-        Link(number: 1, link: "04".class12physicsexemplar),
+        Linkurl(number: 1, link: "04".class12physicsexemplar),
       ]),
       Chapter(chapterName: "MAGNETISM AND MATTER", links: [
-        Link(number: 1, link: "05".class12physicsexemplar),
+        Linkurl(number: 1, link: "05".class12physicsexemplar),
       ]),
       Chapter(chapterName: "ELECTROMAGNETIC INDUCTION", links: [
-        Link(number: 1, link: "06".class12physicsexemplar),
+        Linkurl(number: 1, link: "06".class12physicsexemplar),
       ]),
       Chapter(chapterName: "ALTERNATING CURRENT", links: [
-        Link(number: 1, link: "07".class12physicsexemplar),
+        Linkurl(number: 1, link: "07".class12physicsexemplar),
       ]),
       Chapter(chapterName: "ELECTROMAGNETIC WAVES", links: [
-        Link(number: 1, link: "08".class12physicsexemplar),
+        Linkurl(number: 1, link: "08".class12physicsexemplar),
       ]),
       Chapter(chapterName: "RAY OPTICS AND OPTICAL INSTRUMENTS", links: [
-        Link(number: 1, link: "09".class12physicsexemplar),
+        Linkurl(number: 1, link: "09".class12physicsexemplar),
       ]),
       Chapter(chapterName: "WAVE OPTICS", links: [
-        Link(number: 1, link: "10".class12physicsexemplar),
+        Linkurl(number: 1, link: "10".class12physicsexemplar),
       ]),
       Chapter(chapterName: "DUAL NATURE OF RADIATION AND MATTER", links: [
-        Link(number: 1, link: "11".class12physicsexemplar),
+        Linkurl(number: 1, link: "11".class12physicsexemplar),
       ]),
       Chapter(chapterName: "ATOMS", links: [
-        Link(number: 1, link: "12".class12physicsexemplar),
+        Linkurl(number: 1, link: "12".class12physicsexemplar),
       ]),
       Chapter(chapterName: "NUCLEI", links: [
-        Link(number: 1, link: "13".class12physicsexemplar),
+        Linkurl(number: 1, link: "13".class12physicsexemplar),
       ]),
       Chapter(chapterName: "SEMICONDUCTOR ELECTRONICS", links: [
-        Link(number: 1, link: "14".class12physicsexemplar),
+        Linkurl(number: 1, link: "14".class12physicsexemplar),
       ]),
       Chapter(chapterName: "COMMUNICATION SYSTEMS", links: [
-        Link(number: 1, link: "15".class12physicsexemplar),
+        Linkurl(number: 1, link: "15".class12physicsexemplar),
       ]),
       Chapter(chapterName: "ANSWER", links: [
-        Link(number: 1, link: "17".class12physicsexemplar),
+        Linkurl(number: 1, link: "17".class12physicsexemplar),
       ]),
     ],
   )

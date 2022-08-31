@@ -11,55 +11,55 @@ List<Book> chemistry = [
     subject: 'Chemistry',
     chapters: [
       Chapter(chapterName: "The Solid State", links: [
-        Link(number: 1, link: "lech101".ncert),
+        Linkurl(number: 1, link: "lech101".ncert),
       ]),
       Chapter(chapterName: "Solutions", links: [
-        Link(number: 1, link: "lech102".ncert),
+        Linkurl(number: 1, link: "lech102".ncert),
       ]),
       Chapter(chapterName: "Electrochemistry", links: [
-        Link(number: 1, link: "lech103".ncert),
+        Linkurl(number: 1, link: "lech103".ncert),
       ]),
       Chapter(chapterName: "Chemical Kinetics", links: [
-        Link(number: 1, link: "lech104".ncert),
+        Linkurl(number: 1, link: "lech104".ncert),
       ]),
       Chapter(chapterName: "Surface Chemistry", links: [
-        Link(number: 1, link: "lech105".ncert),
+        Linkurl(number: 1, link: "lech105".ncert),
       ]),
       Chapter(
           chapterName:
               "General Principles and Processes of Isolation of Elements",
           links: [
-            Link(number: 1, link: "lech106".ncert),
+            Linkurl(number: 1, link: "lech106".ncert),
           ]),
       Chapter(chapterName: "The p-Block Elements", links: [
-        Link(number: 1, link: "lech107".ncert),
+        Linkurl(number: 1, link: "lech107".ncert),
       ]),
       Chapter(chapterName: "The d-and f-Block Elements", links: [
-        Link(number: 1, link: "lech108".ncert),
+        Linkurl(number: 1, link: "lech108".ncert),
       ]),
       Chapter(chapterName: "Coordination Compounds", links: [
-        Link(number: 1, link: "lech109".ncert),
+        Linkurl(number: 1, link: "lech109".ncert),
       ]),
       Chapter(chapterName: "Haloalkanes and Haloarenes", links: [
-        Link(number: 1, link: "lech201".ncert),
+        Linkurl(number: 1, link: "lech201".ncert),
       ]),
       Chapter(chapterName: "Alcohols, Phenols and Ethers", links: [
-        Link(number: 1, link: "lech202".ncert),
+        Linkurl(number: 1, link: "lech202".ncert),
       ]),
       Chapter(chapterName: "Aldehydes, Ketones and Carboxylic Acids", links: [
-        Link(number: 1, link: "lech203".ncert),
+        Linkurl(number: 1, link: "lech203".ncert),
       ]),
       Chapter(chapterName: "Amines", links: [
-        Link(number: 1, link: "lech204".ncert),
+        Linkurl(number: 1, link: "lech204".ncert),
       ]),
       Chapter(chapterName: "Biomolecules", links: [
-        Link(number: 1, link: "lech205".ncert),
+        Linkurl(number: 1, link: "lech205".ncert),
       ]),
       Chapter(chapterName: "Polymers", links: [
-        Link(number: 1, link: "lech206".ncert),
+        Linkurl(number: 1, link: "lech206".ncert),
       ]),
       Chapter(chapterName: "Chemistry in Everyday Life", links: [
-        Link(number: 1, link: "lech207".ncert),
+        Linkurl(number: 1, link: "lech207".ncert),
       ]),
     ],
   ),
@@ -69,55 +69,55 @@ List<Book> chemistry = [
     subject: 'Chemistry',
     chapters: [
       Chapter(chapterName: "The Solid State", links: [
-        Link(number: 1, link: "01".class12chemistryexemplar),
+        Linkurl(number: 1, link: "01".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Solutions", links: [
-        Link(number: 1, link: "02".class12chemistryexemplar),
+        Linkurl(number: 1, link: "02".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Electrochemistry", links: [
-        Link(number: 1, link: "03".class12chemistryexemplar),
+        Linkurl(number: 1, link: "03".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Chemical Kinetics", links: [
-        Link(number: 1, link: "04".class12chemistryexemplar),
+        Linkurl(number: 1, link: "04".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Surface Chemistry", links: [
-        Link(number: 1, link: "05".class12chemistryexemplar),
+        Linkurl(number: 1, link: "05".class12chemistryexemplar),
       ]),
       Chapter(
           chapterName:
               "General Principles and Processes of Isolation of Elements",
           links: [
-            Link(number: 1, link: "06".class12chemistryexemplar),
+            Linkurl(number: 1, link: "06".class12chemistryexemplar),
           ]),
       Chapter(chapterName: "The p-Block Elements", links: [
-        Link(number: 1, link: "07".class12chemistryexemplar),
+        Linkurl(number: 1, link: "07".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "The d-and f-Block Elements", links: [
-        Link(number: 1, link: "08".class12chemistryexemplar),
+        Linkurl(number: 1, link: "08".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Coordination Compounds", links: [
-        Link(number: 1, link: "09".class12chemistryexemplar),
+        Linkurl(number: 1, link: "09".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Haloalkanes and Haloarenes", links: [
-        Link(number: 1, link: "10".class12chemistryexemplar),
+        Linkurl(number: 1, link: "10".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Alcohols, Phenols and Ethers", links: [
-        Link(number: 1, link: "11".class12chemistryexemplar),
+        Linkurl(number: 1, link: "11".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Aldehydes, Ketones and Carboxylic Acids", links: [
-        Link(number: 1, link: "12".class12chemistryexemplar),
+        Linkurl(number: 1, link: "12".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Amines", links: [
-        Link(number: 1, link: "13".class12chemistryexemplar),
+        Linkurl(number: 1, link: "13".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Biomolecules", links: [
-        Link(number: 1, link: "14".class12chemistryexemplar),
+        Linkurl(number: 1, link: "14".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Polymers", links: [
-        Link(number: 1, link: "15".class12chemistryexemplar),
+        Linkurl(number: 1, link: "15".class12chemistryexemplar),
       ]),
       Chapter(chapterName: "Chemistry in Everyday Life", links: [
-        Link(number: 1, link: "16".class12chemistryexemplar),
+        Linkurl(number: 1, link: "16".class12chemistryexemplar),
       ]),
     ],
   )

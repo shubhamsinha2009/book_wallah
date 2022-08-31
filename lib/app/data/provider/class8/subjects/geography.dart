@@ -11,25 +11,25 @@ List<Book> geography = [
     subject: 'GEOGRAPHY',
     chapters: [
       Chapter(chapterName: "Resources", links: [
-        Link(number: 1, link: "hess101".ncert),
+        Linkurl(number: 1, link: "hess101".ncert),
       ]),
       Chapter(
           chapterName:
               "Land, Soil, Water, Natural Vegetation and Wildlife Resources",
           links: [
-            Link(number: 1, link: "hess102".ncert),
+            Linkurl(number: 1, link: "hess102".ncert),
           ]),
       Chapter(chapterName: "Mineral and Power Resources", links: [
-        Link(number: 1, link: "hess103".ncert),
+        Linkurl(number: 1, link: "hess103".ncert),
       ]),
       Chapter(chapterName: "Agriculture", links: [
-        Link(number: 1, link: "hess104".ncert),
+        Linkurl(number: 1, link: "hess104".ncert),
       ]),
       Chapter(chapterName: "Industries", links: [
-        Link(number: 1, link: "hess105".ncert),
+        Linkurl(number: 1, link: "hess105".ncert),
       ]),
       Chapter(chapterName: "Human Resources", links: [
-        Link(number: 1, link: "hess106".ncert),
+        Linkurl(number: 1, link: "hess106".ncert),
       ]),
     ],
   ),

@@ -11,19 +11,19 @@ List<Book> history = [
     subject: 'HISTORY',
     chapters: [
       Chapter(chapterName: "The Rise of Nationalism in Europe", links: [
-        Link(number: 1, link: "jess301".ncert),
+        Linkurl(number: 1, link: "jess301".ncert),
       ]),
       Chapter(chapterName: "Nationalism in India", links: [
-        Link(number: 1, link: "jess302".ncert),
+        Linkurl(number: 1, link: "jess302".ncert),
       ]),
       Chapter(chapterName: "The Making of Global World", links: [
-        Link(number: 1, link: "jess303".ncert),
+        Linkurl(number: 1, link: "jess303".ncert),
       ]),
       Chapter(chapterName: "The Age of Industrialisation", links: [
-        Link(number: 1, link: "jess304".ncert),
+        Linkurl(number: 1, link: "jess304".ncert),
       ]),
       Chapter(chapterName: "Print Culture and the Modern World", links: [
-        Link(number: 1, link: "jess305".ncert),
+        Linkurl(number: 1, link: "jess305".ncert),
       ]),
     ],
   ),

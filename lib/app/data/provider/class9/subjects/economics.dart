@@ -11,16 +11,16 @@ List<Book> economics = [
     subject: 'ECONOMICS',
     chapters: [
       Chapter(chapterName: "The Story of Village Palampur", links: [
-        Link(number: 1, link: "iess201".ncert),
+        Linkurl(number: 1, link: "iess201".ncert),
       ]),
       Chapter(chapterName: "People as Resource", links: [
-        Link(number: 1, link: "iess202".ncert),
+        Linkurl(number: 1, link: "iess202".ncert),
       ]),
       Chapter(chapterName: "Poverty as a Challenge", links: [
-        Link(number: 1, link: "iess203".ncert),
+        Linkurl(number: 1, link: "iess203".ncert),
       ]),
       Chapter(chapterName: "Food Security in India", links: [
-        Link(number: 1, link: "iess204".ncert),
+        Linkurl(number: 1, link: "iess204".ncert),
       ]),
     ],
   ),

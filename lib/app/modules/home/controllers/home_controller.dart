@@ -1,8 +1,7 @@
 import 'package:get/get.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:new_version/new_version.dart';
 import 'package:wakelock/wakelock.dart';
-
-import '../../../core/services/getstorage.dart';
 
 class HomeController extends GetxController {
   // final isBottomBannerAdLoaded = false.obs;
@@ -37,10 +36,8 @@ class HomeController extends GetxController {
     // if (kReleaseMode) {
     //   _createBottomBannerAd();
     // }
-    ever(
-        changeTheme,
-        (_) => GetStorageDbService.getWrite(
-            key: 'darkmode', value: changeTheme.value));
+    ever(changeTheme,
+        (_) => Hive.box('settings').put('darkmode', changeTheme.value));
     Wakelock.toggle(enable: true);
     super.onInit();
   }

@@ -11,19 +11,19 @@ List<Book> civics = [
     subject: 'CIVICS',
     chapters: [
       Chapter(chapterName: "What is Democracy? Why Democracy?", links: [
-        Link(number: 1, link: "iess401".ncert),
+        Linkurl(number: 1, link: "iess401".ncert),
       ]),
       Chapter(chapterName: "Constitutional Design", links: [
-        Link(number: 1, link: "iess402".ncert),
+        Linkurl(number: 1, link: "iess402".ncert),
       ]),
       Chapter(chapterName: "Electoral Politics", links: [
-        Link(number: 1, link: "iess403".ncert),
+        Linkurl(number: 1, link: "iess403".ncert),
       ]),
       Chapter(chapterName: "Working of Institutions", links: [
-        Link(number: 1, link: "iess404".ncert),
+        Linkurl(number: 1, link: "iess404".ncert),
       ]),
       Chapter(chapterName: "Democratic Rights", links: [
-        Link(number: 1, link: "iess405".ncert),
+        Linkurl(number: 1, link: "iess405".ncert),
       ]),
     ],
   ),

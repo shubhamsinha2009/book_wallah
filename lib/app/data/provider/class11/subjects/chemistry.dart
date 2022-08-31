@@ -11,52 +11,52 @@ List<Book> chemistry = [
     subject: 'Chemistry',
     chapters: [
       Chapter(chapterName: "SOME BASIC CONCEPTS OF CHEMISTRY", links: [
-        Link(number: 1, link: "lech101".ncert),
+        Linkurl(number: 1, link: "lech101".ncert),
       ]),
       Chapter(chapterName: "STRUCTURE OF ATOM", links: [
-        Link(number: 1, link: "lech102".ncert),
+        Linkurl(number: 1, link: "lech102".ncert),
       ]),
       Chapter(
           chapterName:
               "CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES",
           links: [
-            Link(number: 1, link: "lech103".ncert),
+            Linkurl(number: 1, link: "lech103".ncert),
           ]),
       Chapter(chapterName: "CHEMICAL BONDING AND MOLECULAR STRUCTURE", links: [
-        Link(number: 1, link: "lech104".ncert),
+        Linkurl(number: 1, link: "lech104".ncert),
       ]),
       Chapter(chapterName: "STATES OF MATTER", links: [
-        Link(number: 1, link: "lech105".ncert),
+        Linkurl(number: 1, link: "lech105".ncert),
       ]),
       Chapter(chapterName: "THERMODYNAMICS", links: [
-        Link(number: 1, link: "lech106".ncert),
+        Linkurl(number: 1, link: "lech106".ncert),
       ]),
       Chapter(chapterName: "EQUILIBRIUM", links: [
-        Link(number: 1, link: "lech107".ncert),
+        Linkurl(number: 1, link: "lech107".ncert),
       ]),
       Chapter(chapterName: "Redox Reactions", links: [
-        Link(number: 1, link: "lech201".ncert),
+        Linkurl(number: 1, link: "lech201".ncert),
       ]),
       Chapter(chapterName: "Hydrogen", links: [
-        Link(number: 1, link: "lech202".ncert),
+        Linkurl(number: 1, link: "lech202".ncert),
       ]),
       Chapter(chapterName: "The s-Block Elements", links: [
-        Link(number: 1, link: "lech203".ncert),
+        Linkurl(number: 1, link: "lech203".ncert),
       ]),
       Chapter(chapterName: "The p-Block Elements", links: [
-        Link(number: 1, link: "lech204".ncert),
+        Linkurl(number: 1, link: "lech204".ncert),
       ]),
       Chapter(
           chapterName:
               "Organic Chemistry – Some Basic Principles and Techniques",
           links: [
-            Link(number: 1, link: "lech205".ncert),
+            Linkurl(number: 1, link: "lech205".ncert),
           ]),
       Chapter(chapterName: "Hydrocarbons", links: [
-        Link(number: 1, link: "lech206".ncert),
+        Linkurl(number: 1, link: "lech206".ncert),
       ]),
       Chapter(chapterName: "Environmental Chemistry", links: [
-        Link(number: 1, link: "lech207".ncert),
+        Linkurl(number: 1, link: "lech207".ncert),
       ]),
     ],
   ),
@@ -66,52 +66,52 @@ List<Book> chemistry = [
     subject: 'Chemistry',
     chapters: [
       Chapter(chapterName: "SOME BASIC CONCEPTS OF CHEMISTRY", links: [
-        Link(number: 1, link: "01".class11chemistryexemplar),
+        Linkurl(number: 1, link: "01".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "STRUCTURE OF ATOM", links: [
-        Link(number: 1, link: "02".class11chemistryexemplar),
+        Linkurl(number: 1, link: "02".class11chemistryexemplar),
       ]),
       Chapter(
           chapterName:
               "CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES",
           links: [
-            Link(number: 1, link: "03".class11chemistryexemplar),
+            Linkurl(number: 1, link: "03".class11chemistryexemplar),
           ]),
       Chapter(chapterName: "CHEMICAL BONDING AND MOLECULAR STRUCTURE", links: [
-        Link(number: 1, link: "04".class11chemistryexemplar),
+        Linkurl(number: 1, link: "04".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "STATES OF MATTER", links: [
-        Link(number: 1, link: "05".class11chemistryexemplar),
+        Linkurl(number: 1, link: "05".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "THERMODYNAMICS", links: [
-        Link(number: 1, link: "06".class11chemistryexemplar),
+        Linkurl(number: 1, link: "06".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "EQUILIBRIUM", links: [
-        Link(number: 1, link: "07".class11chemistryexemplar),
+        Linkurl(number: 1, link: "07".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "Redox Reactions", links: [
-        Link(number: 1, link: "08".class11chemistryexemplar),
+        Linkurl(number: 1, link: "08".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "Hydrogen", links: [
-        Link(number: 1, link: "09".class11chemistryexemplar),
+        Linkurl(number: 1, link: "09".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "The s-Block Elements", links: [
-        Link(number: 1, link: "10".class11chemistryexemplar),
+        Linkurl(number: 1, link: "10".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "The p-Block Elements", links: [
-        Link(number: 1, link: "11".class11chemistryexemplar),
+        Linkurl(number: 1, link: "11".class11chemistryexemplar),
       ]),
       Chapter(
           chapterName:
               "Organic Chemistry – Some Basic Principles and Techniques",
           links: [
-            Link(number: 1, link: "12".class11chemistryexemplar),
+            Linkurl(number: 1, link: "12".class11chemistryexemplar),
           ]),
       Chapter(chapterName: "Hydrocarbons", links: [
-        Link(number: 1, link: "13".class11chemistryexemplar),
+        Linkurl(number: 1, link: "13".class11chemistryexemplar),
       ]),
       Chapter(chapterName: "Environmental Chemistry", links: [
-        Link(number: 1, link: "14".class11chemistryexemplar),
+        Linkurl(number: 1, link: "14".class11chemistryexemplar),
       ]),
     ],
   )

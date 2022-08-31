@@ -11,19 +11,19 @@ List<Book> economics = [
     subject: 'ECONOMICS',
     chapters: [
       Chapter(chapterName: "DEVELOPMENT", links: [
-        Link(number: 1, link: "jess201".ncert),
+        Linkurl(number: 1, link: "jess201".ncert),
       ]),
       Chapter(chapterName: "SECTORS OF THE INDIAN ECONOMY", links: [
-        Link(number: 1, link: "jess202".ncert),
+        Linkurl(number: 1, link: "jess202".ncert),
       ]),
       Chapter(chapterName: "MONEY AND CREDIT", links: [
-        Link(number: 1, link: "jess203".ncert),
+        Linkurl(number: 1, link: "jess203".ncert),
       ]),
       Chapter(chapterName: "GLOBALISATION AND THE INDIAN ECONOMY", links: [
-        Link(number: 1, link: "jess204".ncert),
+        Linkurl(number: 1, link: "jess204".ncert),
       ]),
       Chapter(chapterName: "CONSUMER RIGHTS", links: [
-        Link(number: 1, link: "jess205".ncert),
+        Linkurl(number: 1, link: "jess205".ncert),
       ]),
     ],
   ),

@@ -12,83 +12,83 @@ List<Book> maths = [
       Chapter(
         chapterName: 'KNOWING OUR NUMBERS',
         links: [
-          Link(number: 1, link: 'femh101'.ncert),
+          Linkurl(number: 1, link: 'femh101'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'WHOLE NUMBERS',
-        links: [Link(number: 1, link: 'femh102'.ncert)],
+        links: [Linkurl(number: 1, link: 'femh102'.ncert)],
       ),
       Chapter(
         chapterName: 'PLAYING WITH NUMBERS',
         links: [
-          Link(number: 1, link: 'femh103'.ncert),
+          Linkurl(number: 1, link: 'femh103'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'BASIC GEOMETRICAL IDEAS',
         links: [
-          Link(number: 1, link: 'femh104'.ncert),
+          Linkurl(number: 1, link: 'femh104'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'UNDERSTANDING ELEMENTARY SHAPESData Handling',
         links: [
-          Link(number: 1, link: 'femh105'.ncert),
+          Linkurl(number: 1, link: 'femh105'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'INTEGERS',
         links: [
-          Link(number: 1, link: 'femh106'.ncert),
+          Linkurl(number: 1, link: 'femh106'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'FRACTIONS',
         links: [
-          Link(number: 1, link: 'femh107'.ncert),
+          Linkurl(number: 1, link: 'femh107'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'DECIMALS',
         links: [
-          Link(number: 1, link: 'femh108'.ncert),
+          Linkurl(number: 1, link: 'femh108'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'DATA HANDLING',
         links: [
-          Link(number: 1, link: 'femh109'.ncert),
+          Linkurl(number: 1, link: 'femh109'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'MENSURATION',
         links: [
-          Link(number: 1, link: 'femh110'.ncert),
+          Linkurl(number: 1, link: 'femh110'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'ALGEBRA',
         links: [
-          Link(number: 1, link: 'femh111'.ncert),
+          Linkurl(number: 1, link: 'femh111'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'RATIO AND PROPORTION',
         links: [
-          Link(number: 1, link: 'femh112'.ncert),
+          Linkurl(number: 1, link: 'femh112'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'SYMMETRY',
         links: [
-          Link(number: 1, link: 'femh113'.ncert),
+          Linkurl(number: 1, link: 'femh113'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'PRACTICAL GEOMETRY ',
         links: [
-          Link(number: 1, link: 'femh114'.ncert),
+          Linkurl(number: 1, link: 'femh114'.ncert),
         ],
       ),
     ],
@@ -101,59 +101,59 @@ List<Book> maths = [
       Chapter(
         chapterName: 'NUMBER SYSTEM',
         links: [
-          Link(number: 1, link: '01'.class6mathsexemplar),
+          Linkurl(number: 1, link: '01'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'GEOMETRY',
-        links: [Link(number: 1, link: '02'.class6mathsexemplar)],
+        links: [Linkurl(number: 1, link: '02'.class6mathsexemplar)],
       ),
       Chapter(
         chapterName: 'INTEGERS',
         links: [
-          Link(number: 1, link: '03'.class6mathsexemplar),
+          Linkurl(number: 1, link: '03'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'Fractions & Decimals',
         links: [
-          Link(number: 1, link: '04'.class6mathsexemplar),
+          Linkurl(number: 1, link: '04'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'Data Handling',
         links: [
-          Link(number: 1, link: '05'.class6mathsexemplar),
+          Linkurl(number: 1, link: '05'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'MENSURATION',
         links: [
-          Link(number: 1, link: '06'.class6mathsexemplar),
+          Linkurl(number: 1, link: '06'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'ALGEBRA',
         links: [
-          Link(number: 1, link: '07'.class6mathsexemplar),
+          Linkurl(number: 1, link: '07'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'RATIO AND PROPORTION',
         links: [
-          Link(number: 1, link: '08'.class6mathsexemplar),
+          Linkurl(number: 1, link: '08'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'SYMMETRY & PRACTICAL GEOMETRY',
         links: [
-          Link(number: 1, link: '09'.class6mathsexemplar),
+          Linkurl(number: 1, link: '09'.class6mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'Answer',
         links: [
-          Link(number: 1, link: 'an'.class6mathsexemplar),
+          Linkurl(number: 1, link: 'an'.class6mathsexemplar),
         ],
       ),
     ],

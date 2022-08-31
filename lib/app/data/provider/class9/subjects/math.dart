@@ -12,95 +12,95 @@ List<Book> maths = [
       Chapter(
         chapterName: 'NUMBER SYSTEMS',
         links: [
-          Link(number: 1, link: 'iemh101'.ncert),
+          Linkurl(number: 1, link: 'iemh101'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'POLYNOMIALS',
-        links: [Link(number: 1, link: 'iemh102'.ncert)],
+        links: [Linkurl(number: 1, link: 'iemh102'.ncert)],
       ),
       Chapter(
         chapterName: 'COORDINATE GEOMETRY',
         links: [
-          Link(number: 1, link: 'iemh103'.ncert),
+          Linkurl(number: 1, link: 'iemh103'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'LINEAR EQUATIONS IN TWO VARIABLES ',
         links: [
-          Link(number: 1, link: 'iemh104'.ncert),
+          Linkurl(number: 1, link: 'iemh104'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'INTRODUCTION TO EUCLID’S GEOMETRY',
         links: [
-          Link(number: 1, link: 'iemh105'.ncert),
+          Linkurl(number: 1, link: 'iemh105'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'LINES AND ANGLES',
         links: [
-          Link(number: 1, link: 'iemh106'.ncert),
+          Linkurl(number: 1, link: 'iemh106'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'TRIANGLES',
         links: [
-          Link(number: 1, link: 'iemh107'.ncert),
+          Linkurl(number: 1, link: 'iemh107'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'QUADRILATERALS',
         links: [
-          Link(number: 1, link: 'iemh108'.ncert),
+          Linkurl(number: 1, link: 'iemh108'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'AREAS OF PARALLELOGRAMS AND TRIANGLES',
         links: [
-          Link(number: 1, link: 'iemh109'.ncert),
+          Linkurl(number: 1, link: 'iemh109'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'CIRCLES',
         links: [
-          Link(number: 1, link: 'iemh110'.ncert),
+          Linkurl(number: 1, link: 'iemh110'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'Constructions',
         links: [
-          Link(number: 1, link: 'iemh111'.ncert),
+          Linkurl(number: 1, link: 'iemh111'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'HERON’S FORMULA',
         links: [
-          Link(number: 1, link: 'iemh112'.ncert),
+          Linkurl(number: 1, link: 'iemh112'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'SURFACE AREAS AND VOLUMES',
         links: [
-          Link(number: 1, link: 'iemh113'.ncert),
+          Linkurl(number: 1, link: 'iemh113'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'STATISTICS',
         links: [
-          Link(number: 1, link: 'iemh114'.ncert),
+          Linkurl(number: 1, link: 'iemh114'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'PROBABILITY',
         links: [
-          Link(number: 1, link: 'iemh115'.ncert),
+          Linkurl(number: 1, link: 'iemh115'.ncert),
         ],
       ),
       Chapter(
         chapterName: 'Answers',
         links: [
-          Link(number: 1, link: 'iemh1an'.ncert),
+          Linkurl(number: 1, link: 'iemh1an'.ncert),
         ],
       ),
     ],
@@ -113,89 +113,89 @@ List<Book> maths = [
       Chapter(
         chapterName: 'NUMBER SYSTEMS',
         links: [
-          Link(number: 1, link: '01'.class9mathsexemplar),
+          Linkurl(number: 1, link: '01'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'POLYNOMIALS',
-        links: [Link(number: 1, link: '02'.class9mathsexemplar)],
+        links: [Linkurl(number: 1, link: '02'.class9mathsexemplar)],
       ),
       Chapter(
         chapterName: 'COORDINATE GEOMETRY',
         links: [
-          Link(number: 1, link: '03'.class9mathsexemplar),
+          Linkurl(number: 1, link: '03'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'LINEAR EQUATIONS IN TWO VARIABLES ',
         links: [
-          Link(number: 1, link: '04'.class9mathsexemplar),
+          Linkurl(number: 1, link: '04'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'INTRODUCTION TO EUCLID’S GEOMETRY',
         links: [
-          Link(number: 1, link: '05'.class9mathsexemplar),
+          Linkurl(number: 1, link: '05'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'LINES AND ANGLES',
         links: [
-          Link(number: 1, link: '06'.class9mathsexemplar),
+          Linkurl(number: 1, link: '06'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'TRIANGLES',
         links: [
-          Link(number: 1, link: '07'.class9mathsexemplar),
+          Linkurl(number: 1, link: '07'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'QUADRILATERALS',
         links: [
-          Link(number: 1, link: '08'.class9mathsexemplar),
+          Linkurl(number: 1, link: '08'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'AREAS OF PARALLELOGRAMS AND TRIANGLES',
         links: [
-          Link(number: 1, link: '09'.class9mathsexemplar),
+          Linkurl(number: 1, link: '09'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'CIRCLES',
         links: [
-          Link(number: 1, link: '10'.class9mathsexemplar),
+          Linkurl(number: 1, link: '10'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'Constructions',
         links: [
-          Link(number: 1, link: '11'.class9mathsexemplar),
+          Linkurl(number: 1, link: '11'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'HERON’S FORMULA',
         links: [
-          Link(number: 1, link: '12'.class9mathsexemplar),
+          Linkurl(number: 1, link: '12'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'SURFACE AREAS AND VOLUMES',
         links: [
-          Link(number: 1, link: '13'.class9mathsexemplar),
+          Linkurl(number: 1, link: '13'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'STATISTICS & PROBABILITY',
         links: [
-          Link(number: 1, link: '14'.class9mathsexemplar),
+          Linkurl(number: 1, link: '14'.class9mathsexemplar),
         ],
       ),
       Chapter(
         chapterName: 'Answers',
         links: [
-          Link(number: 1, link: 'an'.class9mathsexemplar),
+          Linkurl(number: 1, link: 'an'.class9mathsexemplar),
         ],
       ),
     ],

@@ -1,8 +1,15 @@
 import 'package:books_wallah/app/data/model/links.dart';
+import 'package:hive/hive.dart';
 
-class Chapter {
+part 'chapter.g.dart';
+
+@HiveType(typeId: 3)
+class Chapter extends HiveObject {
+  @HiveField(0)
   final String chapterName;
-  final List<Link> links;
+
+  @HiveField(1)
+  final List<Linkurl> links;
   // final String fileSize;
 
   Chapter({

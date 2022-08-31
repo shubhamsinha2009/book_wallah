@@ -3,10 +3,9 @@ import 'dart:io';
 import 'package:alh_pdf_view/controller/alh_pdf_view_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 import 'package:wakelock/wakelock.dart';
-
-import '../../../core/services/getstorage.dart';
 import '../../home/controllers/home_controller.dart';
 
 class ViewPdfController extends GetxController {
@@ -209,8 +208,7 @@ class ViewPdfController extends GetxController {
   void onInit() async {
     filePath = Get.arguments;
 
-    final Map<String, dynamic>? pdfDetails =
-        GetStorageDbService.getRead(key: filePath);
+    final Map<String, dynamic>? pdfDetails = Hive.box("pdf").get(filePath);
     intialPageNumber = pdfDetails?['intialPageNumber'] ?? 0;
     swipehorizontal.value = pdfDetails?['swipehorizontal'] ?? false;
     currentPage.value = intialPageNumber;
@@ -271,6 +269,7 @@ class ViewPdfController extends GetxController {
       'swipehorizontal': swipehorizontal.value,
       // 'intialZoomFactor': intialZoomFactor,
     };
-    GetStorageDbService.getWrite(key: filePath, value: pdfDetails);
+    // GetStorageDbService.getWrite(key: filePath, value: pdfDetails);
+    Hive.box("pdf").put(filePath, pdfDetails);
   }
 }
