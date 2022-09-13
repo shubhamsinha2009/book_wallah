@@ -1,6 +1,7 @@
+import 'package:books_wallah/app/core/services/new_version.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:new_version/new_version.dart';
+
 import 'package:wakelock/wakelock.dart';
 
 class HomeController extends GetxController {
@@ -45,7 +46,7 @@ class HomeController extends GetxController {
   @override
   void onReady() {
     try {
-      final newVersion = NewVersion(androidId: "com.sks.books_wallah");
+      final newVersion = NewVersionPlus(androidId: "com.sks.books_wallah");
       if (Get.context != null) {
         newVersion.getVersionStatus().then((status) {
           if (status != null && (status.localVersion != status.storeVersion)) {

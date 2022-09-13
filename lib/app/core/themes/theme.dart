@@ -63,14 +63,14 @@ class Themes {
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: TextButton.styleFrom(
-        primary: Colors.white70,
+        foregroundColor: Colors.white70,
         backgroundColor: Colors.white10,
         shadowColor: Colors.grey.shade900,
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        primary: Colors.white70,
+        foregroundColor: Colors.white70,
       ),
     ),
     snackBarTheme: const SnackBarThemeData(backgroundColor: Colors.black),

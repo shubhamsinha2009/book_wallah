@@ -180,72 +180,41 @@ class DashboardController extends GetxController {
     dashboardList.assignAll(Hive.box("user")
         .get('classList', defaultValue: classList)
         .cast<Class>());
-
     if (dashboardList.length < classList.length) {
       dashboardList.addAll(classList.sublist(dashboardList.length));
       Hive.box("user").put('classList', dashboardList);
     }
+    for (var dashboardElement in dashboardList) {
+      final index = classList.indexWhere((element) =>
+          element.classNumber.compareTo(dashboardElement.classNumber) == 0);
 
-    final index = classList.indexWhere((element) =>
-        element.classNumber.compareTo(
-            dashboardList.elementAt(selectedIndex1.value).classNumber) ==
-        0);
-
-    if (dashboardList.elementAt(selectedIndex1.value).subjectList.length <
-        classList.elementAt(index).subjectList.length) {
-      dashboardList.elementAt(selectedIndex1.value).subjectList.addAll(classList
-          .elementAt(index)
-          .subjectList
-          .sublist(dashboardList
-              .elementAt(selectedIndex1.value)
-              .subjectList
-              .length));
-      Hive.box("user").put('classList', dashboardList);
-    }
-
-    // if (kReleaseMode) {
-    //   _createBottomBannerAd();
-    // }
-
-    final index1 = classList.elementAt(index).subjectList.indexWhere(
-        (element) =>
-            element.subject.compareTo(dashboardList
-                .elementAt(selectedIndex1.value)
-                .subjectList
-                .elementAt(selectedIndex2.value)
-                .subject) ==
-            0);
-    if (dashboardList
-            .elementAt(selectedIndex1.value)
+      if (dashboardElement.subjectList.length <
+          classList[index].subjectList.length) {
+        dashboardElement.subjectList.addAll(classList[index]
             .subjectList
-            .elementAt(selectedIndex2.value)
-            .booksList
-            .length <
-        classList
-            .elementAt(index)
-            .subjectList
-            .elementAt(index1)
-            .booksList
-            .length) {
-      dashboardList
-          .elementAt(selectedIndex1.value)
-          .subjectList
-          .elementAt(selectedIndex2.value)
-          .booksList
-          .addAll(classList
-              .elementAt(index)
-              .subjectList
-              .elementAt(index1)
+            .sublist(dashboardElement.subjectList.length));
+      }
+
+      for (var subjectElement in dashboardElement.subjectList) {
+        final index2 = classList[index].subjectList.indexWhere(
+              (element) =>
+                  element.subject.compareTo(subjectElement.subject) == 0,
+            );
+
+        if (subjectElement.booksList.length <
+            classList[index].subjectList[index2].booksList.length) {
+          subjectElement.booksList.addAll(classList[index]
+              .subjectList[index2]
               .booksList
-              .sublist(bookList.length));
-
+              .sublist(subjectElement.booksList.length));
+        }
+      }
       Hive.box("user").put('classList', dashboardList);
     }
-
-    subjectList
-        .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
-
-    bookList.assignAll(subjectList.elementAt(selectedIndex2.value).booksList);
+    subjectList.assignAll(dashboardList[selectedIndex1.value].subjectList);
+    bookList.assignAll(dashboardList[selectedIndex1.value]
+        .subjectList[selectedIndex2.value]
+        .booksList);
 
     isLoading.value = false;
     super.onInit();
