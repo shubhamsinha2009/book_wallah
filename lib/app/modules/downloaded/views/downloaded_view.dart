@@ -51,8 +51,6 @@ class DownloadedView extends GetView<DownloadedController> {
         //       )),
         body: RefreshIndicator(
           triggerMode: RefreshIndicatorTriggerMode.onEdge,
-          backgroundColor: Colors.white,
-          color: Colors.black87,
           strokeWidth: 4,
           displacement: 150,
           edgeOffset: 0,
@@ -124,9 +122,6 @@ class DownloadedView extends GetView<DownloadedController> {
                                     VisualDensity.adaptivePlatformDensity,
                                 onLongPress: (() => Get.dialog(
                                       AlertDialog(
-                                        backgroundColor: Get.isDarkMode
-                                            ? Colors.black
-                                            : Colors.white,
                                         title: Text(
                                           'Are you sure you wish to delete ${currentfile.name}?',
                                         ),

@@ -18,10 +18,10 @@ class HomeView extends GetView<HomeController> {
             onPressed: () => Get.toNamed(Routes.downloaded),
             icon: const Icon(Icons.download_rounded),
           ),
-          IconButton(
-            onPressed: () => Get.toNamed(Routes.whatsappChat),
-            icon: const Icon(Icons.whatsapp_rounded),
-          ),
+          // IconButton(
+          //   onPressed: () => Get.toNamed(Routes.whatsappChat),
+          //   icon: const Icon(Icons.whatsapp_rounded),
+          //),
           Obx(() => IconButton(
               onPressed: () {
                 Get.changeThemeMode(
@@ -39,8 +39,6 @@ class HomeView extends GetView<HomeController> {
         title: const FittedBox(
           child: Text(
             "Books Wallah",
-            softWrap: true,
-            textScaleFactor: 0.9,
           ),
         ),
       ),

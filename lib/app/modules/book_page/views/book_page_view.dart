@@ -107,9 +107,6 @@ class BookPageView extends GetView<BookPageController> {
                           onLongPress: (() => File(bookPath).existsSync()
                               ? Get.dialog(
                                   AlertDialog(
-                                    backgroundColor: Get.isDarkMode
-                                        ? Colors.black
-                                        : Colors.white,
                                     title: Text(
                                       'Are you sure you wish to delete ${controller.chapterList[index].chapterName}?',
                                     ),

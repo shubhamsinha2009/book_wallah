@@ -62,25 +62,20 @@ class DashboardView extends GetView<DashboardController> {
               SizedBox(
                   height: 35,
                   child: Obx(
-                    (() => ReorderableListView.builder(
-                          onReorder: controller.onReorder1,
+                    (() => ListView.builder(
                           itemCount: controller.dashboardList.length,
-                          scrollController: controller.firstScroll,
+                          controller: controller.firstScroll,
                           itemBuilder: (context, index) {
                             return Padding(
-                              key: ValueKey(index),
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 4),
                               child: Obx(() => ChoiceChip(
-                                    visualDensity:
-                                        VisualDensity.adaptivePlatformDensity,
                                     label: Text(
                                       controller
                                           .dashboardList[index].classNumber,
                                     ),
                                     selected: controller.selectedIndex1.value ==
                                         index,
-                                    backgroundColor: Colors.white12,
                                     onSelected: (value) {
                                       controller.selectedIndex1.value = index;
                                       controller.selectedIndex2.value = 0;
@@ -114,24 +109,20 @@ class DashboardView extends GetView<DashboardController> {
               SizedBox(
                   height: 35,
                   child: Obx(
-                    (() => ReorderableListView.builder(
-                          scrollController: controller.secondScroll,
-                          onReorder: controller.onReorder2,
+                    (() => ListView.builder(
+                          controller: controller.secondScroll,
+
                           itemCount: controller.subjectList.length,
                           itemBuilder: (context, index) {
                             return Padding(
-                              key: ValueKey(index),
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 4),
                               child: Obx(() => ChoiceChip(
-                                    visualDensity:
-                                        VisualDensity.adaptivePlatformDensity,
                                     label: Text(
                                       controller.subjectList[index].subject,
                                     ),
                                     selected: controller.selectedIndex2.value ==
                                         index,
-                                    backgroundColor: Colors.white12,
                                     onSelected: (value) {
                                       controller.selectedIndex2.value = index;
                                       controller.bookList.assignAll(controller
@@ -153,71 +144,21 @@ class DashboardView extends GetView<DashboardController> {
                   )),
               const Divider(),
               Expanded(
-                child: Obx(() => ReorderableListView.builder(
-                      scrollController: controller.thirdScroll,
-                      onReorder: controller.onReorder3,
+                child: Obx(() => ListView.builder(
+                      controller: controller.thirdScroll,
                       itemCount: controller.bookList.length,
-                      itemBuilder: (context, index) => GestureDetector(
-                        key: ValueKey(index),
-                        onTap: () => Get.toNamed(Routes.bookPage,
+                      itemBuilder: (context, index) => TextButton(
+                        onPressed: () => Get.toNamed(Routes.bookPage,
                             arguments: controller.bookList[index]),
                         child: Obx(
-                          () => Container(
-                              alignment: Alignment.center,
-                              padding: const EdgeInsets.only(
-                                top: 10,
-                                bottom: 10,
-                                left: 10,
-                                right: 10,
-                              ),
-                              margin: const EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                    colors: [
-                                      controller
-                                              .homeController.changeTheme.isTrue
-                                          ? Colors.black54
-                                          : Colors.white70,
-                                      controller
-                                              .homeController.changeTheme.isTrue
-                                          ? Colors.black87
-                                          : Colors.white,
-                                    ],
-                                  ),
-                                  //color: Colors.black87,
-                                  borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: controller
-                                              .homeController.changeTheme.isTrue
-                                          ? Colors.grey.shade900
-                                          : Colors.grey.shade400,
-                                      offset: const Offset(5, 5),
-                                      blurRadius: 5,
-                                      spreadRadius: 1,
-                                    ),
-                                    BoxShadow(
-                                      color: controller
-                                              .homeController.changeTheme.isTrue
-                                          ? Colors.grey.shade800
-                                          : Colors.grey.shade300,
-                                      offset: const Offset(-4, -4),
-                                      blurRadius: 5,
-                                      spreadRadius: 1,
-                                    )
-                                  ]),
-                              child: FittedBox(
-                                child: Text(
-                                  controller.bookList[index].bookName,
-                                  textAlign: TextAlign.center,
-                                  style: const TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w800,
-                                  ),
-                                ),
-                              )),
+                          () => Text(
+                            controller.bookList[index].bookName,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
                         ),
                       ),
                     )),

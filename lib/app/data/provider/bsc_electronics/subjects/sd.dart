@@ -148,7 +148,7 @@ List<Book> sd = [
   ),
   Book(
     className: 'Bsc Electronics',
-    bookName: 'Ben G Streetman and S. Banerjee,',
+    bookName: 'Ben G Streetman and S. Banerjee',
     subject: 'Semiconductor Devices',
     chapters: [
       Chapter(

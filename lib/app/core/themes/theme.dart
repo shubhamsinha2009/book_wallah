@@ -2,20 +2,21 @@ import 'package:flutter/material.dart';
 
 class Themes {
   static final ThemeData appDarkTheme = ThemeData(
+    brightness: Brightness.dark,
+    useMaterial3: true,
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Colors.white,
     ),
-    // chipTheme: const ChipThemeData(
-    //   backgroundColor: Colors.white,
-    //   disabledColor: Colors.transparent,
-    //   selectedColor: Colors.white,
-    //   secondarySelectedColor: Colors.white,
-    //   padding: EdgeInsets.all(5),
-    //   shape: StadiumBorder(side: BorderSide(color: Colors.white)),
-    //   labelStyle: TextStyle(color: Colors.white),
-    //   secondaryLabelStyle: TextStyle(color: Colors.black),
-    //   brightness: Brightness.dark,
-    // ),
+    chipTheme: const ChipThemeData(
+      // backgroundColor: Colors.white,
+      // disabledColor: Colors.transparent,
+      //selectedColor: Colors.white,
+      // secondarySelectedColor: Colors.white,
+      // padding: EdgeInsets.all(5),
+      //  shape: StadiumBorder(side: BorderSide(color: Colors.white)),
+      //labelStyle: TextStyle(color: Colors.white),
+      secondaryLabelStyle: TextStyle(color: Colors.black),
+    ),
     dividerColor: Colors.white,
     dividerTheme: const DividerThemeData(color: Colors.white),
     inputDecorationTheme: const InputDecorationTheme(
@@ -44,12 +45,12 @@ class Themes {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20)))),
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    brightness: Brightness.dark,
     primaryColor: Colors.black,
     canvasColor: Colors.black,
     scaffoldBackgroundColor: Colors.black,
     backgroundColor: Colors.black,
     appBarTheme: const AppBarTheme(
+      elevation: 0,
       color: Colors.black,
     ),
     cardColor: Colors.black,
@@ -73,6 +74,10 @@ class Themes {
         foregroundColor: Colors.white70,
       ),
     ),
+    dialogBackgroundColor: Colors.black,
+    dialogTheme: const DialogTheme(
+      backgroundColor: Colors.black,
+    ),
     snackBarTheme: const SnackBarThemeData(backgroundColor: Colors.black),
     textTheme: const TextTheme(
       headline6: TextStyle(
@@ -83,14 +88,29 @@ class Themes {
   );
 
   static final ThemeData appLightTheme = ThemeData(
+    useMaterial3: true,
     brightness: Brightness.light,
     // primaryColor: Colors.red,
     // canvasColor: Colors.red,
     // appBarTheme: const AppBarTheme(
-    //   color: Colors.red,
-    // ),
-    //scaffoldBackgroundColor: Colors.redAccent,
+    //     color: Colors.white,
+    //     titleTextStyle: TextStyle(
+    //         color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+    //     iconTheme: IconThemeData(color: Colors.black),
+    //     elevation: 0),
+    // chipTheme: const ChipThemeData(
+    // backgroundColor: Colors.white,
+    // disabledColor: Colors.transparent,
+    // selectedColor: Colors.white,
+    // secondarySelectedColor: Colors.white,
+    //padding: EdgeInsets.all(5),
 
+    //  secondaryLabelStyle: TextStyle(color: Colors.white),
+    // ),
+    colorScheme: const ColorScheme.light().copyWith(outline: Colors.black),
+    dividerColor: Colors.black,
+    dividerTheme: const DividerThemeData(color: Colors.black),
+    // scaffoldBackgroundColor: Colors.redAccent,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     snackBarTheme: const SnackBarThemeData(
       backgroundColor: Colors.blue,
@@ -104,6 +124,10 @@ class Themes {
         fontSize: 25,
       ),
     ),
+    textButtonTheme: TextButtonThemeData(
+        style: ButtonStyle(
+            foregroundColor:
+                MaterialStateColor.resolveWith((states) => getColor(states)))),
     inputDecorationTheme: const InputDecorationTheme(
       border: InputBorder.none,
       prefixIconColor: Colors.black,
@@ -118,16 +142,16 @@ class Themes {
       labelStyle: TextStyle(color: Colors.black),
     ),
   );
+}
 
-  Color getColor(Set<MaterialState> states) {
-    const Set<MaterialState> interactiveStates = <MaterialState>{
-      MaterialState.pressed,
-      MaterialState.hovered,
-      MaterialState.focused,
-    };
-    if (states.any(interactiveStates.contains)) {
-      return Colors.blue;
-    }
-    return Colors.red;
+Color getColor(Set<MaterialState> states) {
+  const Set<MaterialState> interactiveStates = <MaterialState>{
+    MaterialState.pressed,
+    MaterialState.hovered,
+    MaterialState.focused,
+  };
+  if (states.any(interactiveStates.contains)) {
+    return Colors.blue;
   }
+  return Colors.black87;
 }

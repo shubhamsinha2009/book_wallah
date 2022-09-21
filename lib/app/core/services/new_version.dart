@@ -288,7 +288,7 @@ class NewVersionPlus {
                     title: dialogTitleWidget,
                     content: dialogTextWidget,
                     actions: actions,
-                    // backgroundColor: bgColor,
+
                     // contentTextStyle: TextStyle(
                     //   color: accent,
                     //   fontWeight: FontWeight.w800,

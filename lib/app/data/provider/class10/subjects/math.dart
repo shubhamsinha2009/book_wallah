@@ -104,163 +104,6 @@ List<Book> maths = [
     ],
   ),
   Book(
-    bookName: "NCERT Solutions",
-    subject: 'Mathematics',
-    className: 'Class10',
-    chapters: [
-      Chapter(
-        chapterName: 'Real Numbers',
-        links: [
-          Linkurl(number: 1, link: '1j6iupwQM_qLbQPqsguq_RxFXIgZEy1_B'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364437&h=7a931bc21de368119590567a97af2734'.pdfdrive),
-          Linkurl(number: 3, link: '632022b586be5h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Polynomials',
-        links: [
-          Linkurl(number: 1, link: '1bwKZ2l63CRVPltTKwkXFKjpm_sNDeJCg'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364430&h=f2c508602a3b520cee073f045e422804'.pdfdrive),
-          Linkurl(number: 3, link: '632022b75d711h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Pairs of Linear Equations in Two Variables',
-        links: [
-          Linkurl(number: 1, link: '17ut3-SFX1I3pv_hvntGtkWFLBRysUQM0'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364472&h=d5fd7d8f24a6ac433b5494c6c74e00e3'.pdfdrive),
-          Linkurl(number: 3, link: '632022ba98c3eh'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Quadratic Equations',
-        links: [
-          Linkurl(number: 1, link: '1POR1Z5JjFp2_F8jyB9iQVrOrPQqEr8hQ'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364486&h=661799858d71fa01b6a36660904b694a'.pdfdrive),
-          Linkurl(number: 3, link: '632022bc9ab1ch'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Arithmetic Progressions',
-        links: [
-          Linkurl(number: 1, link: '1uBLiVV4IKYtxJDVDLBKxTGG2NtLQQCt7'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364507&h=3d1ff5dea9c2cc501e6adde52d60b1ed'.pdfdrive),
-          Linkurl(number: 3, link: '632022be99f7dh'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Triangles',
-        links: [
-          Linkurl(number: 1, link: '1emE8zFItYgMEpHiC8XU4-Vqljm-4TsP1'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364514&h=1a0b08acadcbf1f1dcb1d6628d8f3570'.pdfdrive),
-          Linkurl(number: 3, link: '632022c297df7h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Coordinate Geometry',
-        links: [
-          Linkurl(number: 1, link: '1jSal9qVyAZrq2DFYqS8ycMLqfyTjFSAK'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364528&h=cdb4505790148cb8fa6c8629e10e3ba8'.pdfdrive),
-          Linkurl(number: 3, link: '632022c5a606bh'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Introduction to Trigonometry',
-        links: [
-          Linkurl(number: 1, link: '1aTBDBmnA5nj3L22xTz_I2InrAqHsGy4y'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364549&h=6e18a43412ffabbf21d409a53214b360'.pdfdrive),
-          Linkurl(number: 3, link: '632022c8d9774h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Some Applications of Trigonometry',
-        links: [
-          Linkurl(number: 1, link: '1X4q-vM20BEhtkz1oVcqjAF9Lx8g05M6I'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364556&h=5135fa337b9d06caf95da8490d3f28dc'.pdfdrive),
-          Linkurl(number: 3, link: '632022ca19352h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Circles',
-        links: [
-          Linkurl(number: 1, link: '1p4MzUKcSc2Y6JO0Kq4gacfar39baD3Nx'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364563&h=7418664336c416f0b2efc3231772edac'.pdfdrive),
-          Linkurl(number: 3, link: '632022cc14b67h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Constructions',
-        links: [
-          Linkurl(number: 1, link: '1JBv2ai4Yo-JmMbhoK8wmTuHyYdTRRk9J'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364570&h=e1c9d3907a64f712508fbae00c7c6e33'.pdfdrive),
-          Linkurl(number: 3, link: '632022cd32c74h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Areas Related to Circles',
-        links: [
-          Linkurl(number: 1, link: '1iJ5pyBtgYqE_TRZ3QpjSMb4FHy_Pcvot'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364577&h=f530dd0a8786100f8e0aa470314071a1'.pdfdrive),
-          Linkurl(number: 3, link: '632022cf4aa0ch'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Surface Areas and Volumes',
-        links: [
-          Linkurl(number: 1, link: '1ZNiOEV4B3SSbBRrwpP-ednRHnpJ7vF8l'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364612&h=79174c061b00a83fa4fba250a0895cf9'.pdfdrive),
-          Linkurl(number: 3, link: '632022d1c8ca1h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Statistics',
-        links: [
-          Linkurl(number: 1, link: '1BPWRCHt5xYQ8Dx1E86NyVZzO16nnHMw4'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364612&h=79174c061b00a83fa4fba250a0895cf9'.pdfdrive),
-          Linkurl(number: 3, link: '632022d39ee73h'.uploadgram),
-        ],
-      ),
-      Chapter(
-        chapterName: 'Probability',
-        links: [
-          Linkurl(number: 1, link: '1vRgPa_u03q8kuoFV0j-jonO1CzwbsG3k'.gdrive),
-          Linkurl(
-              number: 2,
-              link: '201364633&h=7d8bbb03a00e6504d9635f6a16d9bcd9'.pdfdrive),
-          Linkurl(number: 3, link: '632022d4b441ah'.uploadgram),
-        ],
-      ),
-    ],
-  ),
-  Book(
     bookName: "NCERT Exemplar",
     subject: 'Mathematics',
     className: 'Class10',
@@ -540,6 +383,163 @@ List<Book> maths = [
               number: 2,
               link: '201364178&h=f4e28c4594d6686dedf8cf6b84005e3d'.pdfdrive),
           Linkurl(number: 3, link: '631f80f7586ebh'.uploadgram),
+        ],
+      ),
+    ],
+  ),
+  Book(
+    bookName: "NCERT Solutions",
+    subject: 'Mathematics',
+    className: 'Class10',
+    chapters: [
+      Chapter(
+        chapterName: 'Real Numbers',
+        links: [
+          Linkurl(number: 1, link: '1j6iupwQM_qLbQPqsguq_RxFXIgZEy1_B'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364437&h=7a931bc21de368119590567a97af2734'.pdfdrive),
+          Linkurl(number: 3, link: '632022b586be5h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Polynomials',
+        links: [
+          Linkurl(number: 1, link: '1bwKZ2l63CRVPltTKwkXFKjpm_sNDeJCg'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364430&h=f2c508602a3b520cee073f045e422804'.pdfdrive),
+          Linkurl(number: 3, link: '632022b75d711h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Pairs of Linear Equations in Two Variables',
+        links: [
+          Linkurl(number: 1, link: '17ut3-SFX1I3pv_hvntGtkWFLBRysUQM0'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364472&h=d5fd7d8f24a6ac433b5494c6c74e00e3'.pdfdrive),
+          Linkurl(number: 3, link: '632022ba98c3eh'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Quadratic Equations',
+        links: [
+          Linkurl(number: 1, link: '1POR1Z5JjFp2_F8jyB9iQVrOrPQqEr8hQ'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364486&h=661799858d71fa01b6a36660904b694a'.pdfdrive),
+          Linkurl(number: 3, link: '632022bc9ab1ch'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Arithmetic Progressions',
+        links: [
+          Linkurl(number: 1, link: '1uBLiVV4IKYtxJDVDLBKxTGG2NtLQQCt7'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364507&h=3d1ff5dea9c2cc501e6adde52d60b1ed'.pdfdrive),
+          Linkurl(number: 3, link: '632022be99f7dh'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Triangles',
+        links: [
+          Linkurl(number: 1, link: '1emE8zFItYgMEpHiC8XU4-Vqljm-4TsP1'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364514&h=1a0b08acadcbf1f1dcb1d6628d8f3570'.pdfdrive),
+          Linkurl(number: 3, link: '632022c297df7h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Coordinate Geometry',
+        links: [
+          Linkurl(number: 1, link: '1jSal9qVyAZrq2DFYqS8ycMLqfyTjFSAK'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364528&h=cdb4505790148cb8fa6c8629e10e3ba8'.pdfdrive),
+          Linkurl(number: 3, link: '632022c5a606bh'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Introduction to Trigonometry',
+        links: [
+          Linkurl(number: 1, link: '1aTBDBmnA5nj3L22xTz_I2InrAqHsGy4y'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364549&h=6e18a43412ffabbf21d409a53214b360'.pdfdrive),
+          Linkurl(number: 3, link: '632022c8d9774h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Some Applications of Trigonometry',
+        links: [
+          Linkurl(number: 1, link: '1X4q-vM20BEhtkz1oVcqjAF9Lx8g05M6I'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364556&h=5135fa337b9d06caf95da8490d3f28dc'.pdfdrive),
+          Linkurl(number: 3, link: '632022ca19352h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Circles',
+        links: [
+          Linkurl(number: 1, link: '1p4MzUKcSc2Y6JO0Kq4gacfar39baD3Nx'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364563&h=7418664336c416f0b2efc3231772edac'.pdfdrive),
+          Linkurl(number: 3, link: '632022cc14b67h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Constructions',
+        links: [
+          Linkurl(number: 1, link: '1JBv2ai4Yo-JmMbhoK8wmTuHyYdTRRk9J'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364570&h=e1c9d3907a64f712508fbae00c7c6e33'.pdfdrive),
+          Linkurl(number: 3, link: '632022cd32c74h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Areas Related to Circles',
+        links: [
+          Linkurl(number: 1, link: '1iJ5pyBtgYqE_TRZ3QpjSMb4FHy_Pcvot'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364577&h=f530dd0a8786100f8e0aa470314071a1'.pdfdrive),
+          Linkurl(number: 3, link: '632022cf4aa0ch'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Surface Areas and Volumes',
+        links: [
+          Linkurl(number: 1, link: '1ZNiOEV4B3SSbBRrwpP-ednRHnpJ7vF8l'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364612&h=79174c061b00a83fa4fba250a0895cf9'.pdfdrive),
+          Linkurl(number: 3, link: '632022d1c8ca1h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Statistics',
+        links: [
+          Linkurl(number: 1, link: '1BPWRCHt5xYQ8Dx1E86NyVZzO16nnHMw4'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364612&h=79174c061b00a83fa4fba250a0895cf9'.pdfdrive),
+          Linkurl(number: 3, link: '632022d39ee73h'.uploadgram),
+        ],
+      ),
+      Chapter(
+        chapterName: 'Probability',
+        links: [
+          Linkurl(number: 1, link: '1vRgPa_u03q8kuoFV0j-jonO1CzwbsG3k'.gdrive),
+          Linkurl(
+              number: 2,
+              link: '201364633&h=7d8bbb03a00e6504d9635f6a16d9bcd9'.pdfdrive),
+          Linkurl(number: 3, link: '632022d4b441ah'.uploadgram),
         ],
       ),
     ],

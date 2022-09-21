@@ -167,8 +167,8 @@ class SettingsView extends GetView<SettingsController> {
             onTap: () async {
               try {
                 await launchUrlString(
-                  "https://sites.google.com/view/privacypolicybookswallah/home",
-                  mode: LaunchMode.externalApplication,
+                  "https://sites.google.com/view/privacy-policy-books-wallah/home",
+                  mode: LaunchMode.inAppWebView,
                 );
               } on PlatformException {
                 Get.showSnackbar(const GetSnackBar(
@@ -187,30 +187,31 @@ class SettingsView extends GetView<SettingsController> {
               ),
             ),
           ),
-          //TODO: Terms And Condition
-          // ListTile(
-          //   onTap: () async {
-          //     try {
-          //       await launchUrlString(
-          //         "https://sites.google.com/view/filegram/terms_and_conditions",
-          //       );
-          //     } on PlatformException {
-          //       Get.showSnackbar(const GetSnackBar(
-          //         messageText: Text('Unable to open '),
-          //         icon: Icon(Icons.error_outline),
-          //         snackPosition: SnackPosition.TOP,
-          //         duration: Duration(seconds: 3),
-          //       ));
-          //     }
-          //   },
-          //   leading: const Icon(Icons.note_alt),
-          //   title: const Text(
-          //     'Terms And Conditions',
-          //     style: TextStyle(
-          //       fontWeight: FontWeight.w500,
-          //     ),
-          //   ),
-          // ),
+          ListTile(
+            onTap: () async {
+              try {
+                await launchUrlString(
+                  "https://sites.google.com/view/books-wallah-dmcapolicy/home",
+                  mode: LaunchMode.inAppWebView,
+                );
+              } on PlatformException {
+                Get.showSnackbar(const GetSnackBar(
+                  messageText: Text('Unable to open '),
+                  icon: Icon(Icons.error_outline),
+                  snackPosition: SnackPosition.TOP,
+                  duration: Duration(seconds: 3),
+                ));
+              }
+            },
+            leading: const Icon(Icons.policy),
+            title: const Text(
+              'DMCA Policy',
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+
           ListTile(
             onTap: () => AppSettings.openAppSettings(),
             leading: const Icon(
@@ -223,36 +224,6 @@ class SettingsView extends GetView<SettingsController> {
               ),
             ),
           ),
-
-          //TODO: Website google sites
-
-          // ListTile(
-          //   onTap: () async {
-          //     try {
-          //       await launchUrlString(
-          //         "https://sites.google.com/view/filegram",
-          //       );
-          //     } on PlatformException {
-          //       Get.showSnackbar(const GetSnackBar(
-          //         messageText: Text('Unable to open '),
-          //         icon: Icon(Icons.error_outline),
-          //         snackPosition: SnackPosition.TOP,
-          //         duration: Duration(seconds: 3),
-          //       ));
-          //     }
-          //   },
-          //   leading: const Icon(Icons.web),
-          //   title: const Text(
-          //     'Our Website',
-          //     style: TextStyle(
-          //       fontWeight: FontWeight.w500,
-          //     ),
-          //   ),
-          // ),
-          // ListTile(
-          //   onTap: controller.openPlayStore,
-          //   title: const Text('Open App in Play Store'),
-          // ),
         ],
       ),
     );

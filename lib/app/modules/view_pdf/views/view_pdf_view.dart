@@ -160,7 +160,6 @@ class ViewPdfView extends GetView<ViewPdfController> {
                   autofocus: true,
                   keyboardType: TextInputType.number,
                 ),
-                backgroundColor: Get.isDarkMode ? Colors.black : Colors.white,
                 actions: [
                   OutlinedButton(
                       onPressed: () => Get.back(), child: const Text('Back')),
@@ -226,8 +225,6 @@ class ViewPdfView extends GetView<ViewPdfController> {
                   onWillPop: () async => false,
                   child: AlertDialog(
                     alignment: Alignment.center,
-                    backgroundColor:
-                        Get.isDarkMode ? Colors.black : Colors.white,
                     title: const Text('Download Again !!!'),
                     content: const Text(
                       'Error : ',

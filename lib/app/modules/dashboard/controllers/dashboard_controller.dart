@@ -68,79 +68,79 @@ class DashboardController extends GetxController {
 //           .toList());
 //     }
 //   }
-  void onReorder1(oldIndex, newIndex) {
-    if (newIndex > oldIndex) {
-      newIndex = newIndex - 1;
-    }
-    if (selectedIndex1 == oldIndex) {
-      selectedIndex1.value = newIndex;
-      Hive.box('user').put('selectedIndex1', newIndex);
-    }
-    final element = dashboardList.removeAt(oldIndex);
-    dashboardList.insert(newIndex, element);
+  // void onReorder1(oldIndex, newIndex) {
+  //   if (newIndex > oldIndex) {
+  //     newIndex = newIndex - 1;
+  //   }
+  //   if (selectedIndex1 == oldIndex) {
+  //     selectedIndex1.value = newIndex;
+  //     Hive.box('user').put('selectedIndex1', newIndex);
+  //   }
+  //   final element = dashboardList.removeAt(oldIndex);
+  //   dashboardList.insert(newIndex, element);
 
-    selectedIndex2.value = 0;
-    subjectList
-        .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
-    bookList.assignAll(subjectList.elementAt(0).booksList);
+  //   selectedIndex2.value = 0;
+  //   subjectList
+  //       .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
+  //   bookList.assignAll(subjectList.elementAt(0).booksList);
 
-    Hive.box("user").put('classList', dashboardList);
-    Hive.box('user').put('firstScroll', firstScroll.offset);
-  }
+  //   Hive.box("user").put('classList', dashboardList);
+  //   Hive.box('user').put('firstScroll', firstScroll.offset);
+  // }
 
-  void onReorder2(oldIndex, newIndex) {
-    if (newIndex > oldIndex) {
-      newIndex = newIndex - 1;
-    }
-    if (selectedIndex2 == oldIndex) {
-      selectedIndex2.value = newIndex;
-      Hive.box('user').put('selectedIndex2', newIndex);
-    }
-    final element = dashboardList
-        .elementAt(selectedIndex1.value)
-        .subjectList
-        .removeAt(oldIndex);
-    dashboardList
-        .elementAt(selectedIndex1.value)
-        .subjectList
-        .insert(newIndex, element);
+  // void onReorder2(oldIndex, newIndex) {
+  //   if (newIndex > oldIndex) {
+  //     newIndex = newIndex - 1;
+  //   }
+  //   if (selectedIndex2 == oldIndex) {
+  //     selectedIndex2.value = newIndex;
+  //     Hive.box('user').put('selectedIndex2', newIndex);
+  //   }
+  //   final element = dashboardList
+  //       .elementAt(selectedIndex1.value)
+  //       .subjectList
+  //       .removeAt(oldIndex);
+  //   dashboardList
+  //       .elementAt(selectedIndex1.value)
+  //       .subjectList
+  //       .insert(newIndex, element);
 
-    subjectList
-        .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
+  //   subjectList
+  //       .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
 
-    bookList.assignAll(subjectList.elementAt(selectedIndex2.value).booksList);
-    Hive.box("user").put('classList', dashboardList);
+  //   bookList.assignAll(subjectList.elementAt(selectedIndex2.value).booksList);
+  //   Hive.box("user").put('classList', dashboardList);
 
-    Hive.box('user').put('secondScroll', secondScroll.offset);
-  }
+  //   Hive.box('user').put('secondScroll', secondScroll.offset);
+  // }
 
-  void onReorder3(oldIndex, newIndex) {
-    if (newIndex > oldIndex) {
-      newIndex = newIndex - 1;
-    }
+  // void onReorder3(oldIndex, newIndex) {
+  //   if (newIndex > oldIndex) {
+  //     newIndex = newIndex - 1;
+  //   }
 
-    final element = dashboardList
-        .elementAt(selectedIndex1.value)
-        .subjectList
-        .elementAt(selectedIndex2.value)
-        .booksList
-        .removeAt(oldIndex);
+  //   final element = dashboardList
+  //       .elementAt(selectedIndex1.value)
+  //       .subjectList
+  //       .elementAt(selectedIndex2.value)
+  //       .booksList
+  //       .removeAt(oldIndex);
 
-    dashboardList
-        .elementAt(selectedIndex1.value)
-        .subjectList
-        .elementAt(selectedIndex2.value)
-        .booksList
-        .insert(newIndex, element);
+  //   dashboardList
+  //       .elementAt(selectedIndex1.value)
+  //       .subjectList
+  //       .elementAt(selectedIndex2.value)
+  //       .booksList
+  //       .insert(newIndex, element);
 
-    subjectList
-        .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
+  //   subjectList
+  //       .assignAll(dashboardList.elementAt(selectedIndex1.value).subjectList);
 
-    bookList.assignAll(subjectList.elementAt(selectedIndex2.value).booksList);
+  //   bookList.assignAll(subjectList.elementAt(selectedIndex2.value).booksList);
 
-    Hive.box("user").put('classList', dashboardList);
-    Hive.box('user').put('thirdScroll', secondScroll.offset);
-  }
+  //   Hive.box("user").put('classList', dashboardList);
+  //   Hive.box('user').put('thirdScroll', secondScroll.offset);
+  // }
   //  void filterfileList(String fileName) {
   //   if (fileName.isEmpty) {
   //     subjectList.assignAll(classes.subjectList);
@@ -177,40 +177,49 @@ class DashboardController extends GetxController {
 
   @override
   void onInit() {
-    dashboardList.assignAll(Hive.box("user")
-        .get('classList', defaultValue: classList)
-        .cast<Class>());
-    if (dashboardList.length < classList.length) {
-      dashboardList.addAll(classList.sublist(dashboardList.length));
-      Hive.box("user").put('classList', dashboardList);
-    }
-    for (var dashboardElement in dashboardList) {
-      final index = classList.indexWhere((element) =>
-          element.classNumber.compareTo(dashboardElement.classNumber) == 0);
+    dashboardList.assignAll(classList);
+    // if (dashboardList.length < classList.length) {
+    //   dashboardList.addAll(classList.sublist(dashboardList.length));
+    //   Hive.box("user").put('classList', dashboardList);
+    // }
+    // for (var dashboardElement in dashboardList) {
+    //   var index = classList.indexWhere((element) =>
+    //       element.classNumber.compareTo(dashboardElement.classNumber) == 0);
 
-      if (dashboardElement.subjectList.length <
-          classList[index].subjectList.length) {
-        dashboardElement.subjectList.addAll(classList[index]
-            .subjectList
-            .sublist(dashboardElement.subjectList.length));
-      }
+    //   if (dashboardElement.subjectList.length <
+    //       classList[index].subjectList.length) {
+    //     dashboardElement.subjectList.addAll(classList[index]
+    //         .subjectList
+    //         .sublist(dashboardElement.subjectList.length));
+    //   }
 
-      for (var subjectElement in dashboardElement.subjectList) {
-        final index2 = classList[index].subjectList.indexWhere(
-              (element) =>
-                  element.subject.compareTo(subjectElement.subject) == 0,
-            );
+    //   for (var subjectElement in dashboardElement.subjectList) {
+    //     var index2 = classList[index].subjectList.indexWhere(
+    //           (element) =>
+    //               element.subject.compareTo(subjectElement.subject) == 0,
+    //         );
 
-        if (subjectElement.booksList.length <
-            classList[index].subjectList[index2].booksList.length) {
-          subjectElement.booksList.addAll(classList[index]
-              .subjectList[index2]
-              .booksList
-              .sublist(subjectElement.booksList.length));
-        }
-      }
-      Hive.box("user").put('classList', dashboardList);
-    }
+    //     if (subjectElement.booksList.length <
+    //         classList[index].subjectList[index2].booksList.length) {
+    //       subjectElement.booksList.addAll(classList[index]
+    //           .subjectList[index2]
+    //           .booksList
+    //           .sublist(subjectElement.booksList.length));
+    //     }
+
+    //     for (var bookElement in subjectElement.booksList) {
+    //       var index3 =
+    //           classList[index].subjectList[index2].booksList.indexWhere(
+    //                 (element) =>
+    //                     element.bookName.compareTo(bookElement.bookName) == 0,
+    //               );
+
+    //       bookElement.chapters.assignAll(
+    //           classList[index].subjectList[index2].booksList[index3].chapters);
+    //     }
+    //   }
+    //   Hive.box("user").put('classList', dashboardList);
+    // }
     subjectList.assignAll(dashboardList[selectedIndex1.value].subjectList);
     bookList.assignAll(dashboardList[selectedIndex1.value]
         .subjectList[selectedIndex2.value]
