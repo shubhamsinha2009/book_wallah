@@ -221,6 +221,32 @@ class SettingsView extends GetView<SettingsController> {
             ),
           ),
         ),
+        ListTile(
+          onTap: () async {
+            try {
+              await launchUrlString(
+                "https://t.me/+liqZuWFmTPoxY2M1",
+                mode: LaunchMode.externalApplication,
+              );
+            } on PlatformException {
+              Get.showSnackbar(const GetSnackBar(
+                messageText: Text('Unable to open '),
+                icon: Icon(Icons.error_outline),
+                snackPosition: SnackPosition.TOP,
+                duration: Duration(seconds: 3),
+              ));
+            }
+          },
+          leading: const Icon(
+            Icons.telegram_outlined,
+          ),
+          title: const Text(
+            'Our Telegram Channel',
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
       ],
     );
   }
