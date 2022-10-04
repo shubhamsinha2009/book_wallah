@@ -8,7 +8,7 @@ import 'package:path_provider/path_provider.dart';
 
 import '../../home/controllers/home_controller.dart';
 
-class DownloadedController extends GetxController {
+class PdfsController extends GetxController {
   final homeController = Get.find<HomeController>();
   // InterstitialAd? interstitialAd;
   // final int maxFailedLoadAttempts = 3;
@@ -22,6 +22,7 @@ class DownloadedController extends GetxController {
   Directory? _mydir;
   final isLoading = true.obs;
   final filesList = <FileSystemEntity>[].obs;
+  final rename = ''.obs;
 
   Future<String> filesDocDir() async {
     //Get this App Document Directory
@@ -29,7 +30,8 @@ class DownloadedController extends GetxController {
 
     final Directory? appDocDir = await getExternalStorageDirectory();
     //App Document Directory + folder name
-    final Directory appDocDirFolder = Directory('${appDocDir?.path}/downloads');
+    final Directory appDocDirFolder =
+        Directory('${appDocDir?.path}/files/pdfs');
 
     if (await appDocDirFolder.exists()) {
       //if folder already exists return path
@@ -42,56 +44,18 @@ class DownloadedController extends GetxController {
     }
   }
 
-  // void _createBottomBannerAd() {
-  //   bottomBannerAd = BannerAd(
-  //     adUnitId: AdHelper.downoadBottomBanner,
-  //     size: AdSize.banner,
-  //     request: const AdRequest(),
-  //     listener: BannerAdListener(
-  //       onAdLoaded: (_) {
-  //         isBottomBannerAdLoaded.value = true;
-  //       },
-  //       onAdFailedToLoad: (ad, error) {
-  //         ad.dispose();
-  //       },
-  //     ),
-  //   );
-  //   if (isBottomBannerAdLoaded.isFalse) {
-  //     bottomBannerAd.load();
-  //   }
-  // }
+  bool validateRename() {
+    final ext = rename.value.toLowerCase();
+    return ext.endsWith(".pdf");
+  }
 
-  // void _createInlineBannerAd() {
-  //   inlineBannerAd = BannerAd(
-  //     adUnitId: AdHelper.downoadInlineBanner,
-  //     size: AdSize.largeBanner,
-  //     request: const AdRequest(),
-  //     listener: BannerAdListener(
-  //       onAdLoaded: (_) {
-  //         isInlineBannerAdLoaded.value = true;
-  //       },
-  //       onAdFailedToLoad: (ad, error) {
-  //         ad.dispose();
-  //       },
-  //     ),
-  //   );
-  //   if (isInlineBannerAdLoaded.isFalse) {
-  //     inlineBannerAd.load();
-  //   }
-  // }
+  Future<File> changeFileNameOnlySync(String filePath) async {
+    var path = filePath;
+    var lastSeparator = path.lastIndexOf(Platform.pathSeparator);
+    var newPath = path.substring(0, lastSeparator + 1) + rename.value;
 
-  // AdWidget adWidget({required AdWithView ad}) {
-  //   return AdWidget(ad: ad);
-  // }
-
-  // int getListViewItemIndex(int index) {
-  //   if (index >= inlineAdIndex &&
-  //       isInlineBannerAdLoaded.isTrue &&
-  //       (filesList.length >= inlineAdIndex)) {
-  //     return index - 1;
-  //   }
-  //   return index;
-  // }
+    return await File(filePath).rename(newPath);
+  }
 
   Future<void> onInitialisation() async {
     _mydir = Directory(await filesDocDir());
@@ -103,7 +67,7 @@ class DownloadedController extends GetxController {
           .whereType<File>()
           .toList()
         ..sort(
-          (a, b) => b.statSync().modified.compareTo(a.statSync().modified),
+          (a, b) => b.statSync().accessed.compareTo(a.statSync().accessed),
         ));
       isLoading.value = false;
     }
@@ -121,7 +85,7 @@ class DownloadedController extends GetxController {
               element.name.toLowerCase().contains(fileName.toLowerCase()))
           .toList()
         ..sort(
-          (a, b) => b.statSync().accessed.compareTo(a.statSync().accessed),
+          (a, b) => b.statSync().modified.compareTo(a.statSync().modified),
         ));
     }
   }
@@ -188,7 +152,8 @@ class DownloadedController extends GetxController {
     if (bytes <= 0) return "0 B";
     const suffixes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
     var i = (log(bytes) / log(1024)).floor();
-    return '${DateFormat.yMMMMd('en_US').add_jm().format(time)} - ${'${(bytes / pow(1024, i)).toStringAsFixed(1)} ${suffixes[i]}'}';
+    //  return '${(bytes / pow(1024, i)).toStringAsFixed(1)} ${suffixes[i]}';
+    return '${DateFormat.yMMMMd('en_US').add_jm().format(time)}\n${'${(bytes / pow(1024, i)).toStringAsFixed(1)} ${suffixes[i]}'}';
   }
 
   @override

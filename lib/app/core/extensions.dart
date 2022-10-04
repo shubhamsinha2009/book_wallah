@@ -3,8 +3,9 @@ import 'dart:io';
 
 extension StringExtensions on String {
   String get sort => toLowerCase().removeAllWhitespace;
+  String get nameOfFile => split('/').last;
 
-  // String get nameOfFile => split('/').last;
+  String get removeExtensionPdf => replaceAll('.pdf', '');
 }
 
 extension LinksExension on String {

@@ -12,10 +12,10 @@ List<Book> ap = [
     chapters: [
       Chapter(
           chapterName:
-              "Energy Bands and Carrier Concentration inThermal Equilibrium",
+              "Energy Bands and Carrier Concentration in Thermal Equilibrium",
           links: [
             Linkurl(
-                number: 1, link: "1KOIYFgPm0mC-hH-OY4eJjzom1ANeUvJE".gdrive),
+                number: 1, link: "1KpcimJsHaLsXusOgYja7620gb2grd-n5".gdrive),
             // Link(number: 2, link: "62efb3a3ebd48h".uploadgram),
           ]),
       Chapter(chapterName: "Carrier Transport Phenomena", links: [

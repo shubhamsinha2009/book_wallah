@@ -9,6 +9,9 @@ import 'package:wakelock/wakelock.dart';
 import '../../home/controllers/home_controller.dart';
 
 class ViewPdfController extends GetxController {
+  final enableDefaultScrollHandle = false.obs;
+  final savedPassword = true.obs;
+  final password = ''.obs;
   final swipehorizontal = false.obs;
   final totalPages = 0.obs;
   final isVisible = true.obs;
@@ -35,7 +38,7 @@ class ViewPdfController extends GetxController {
   List<int> pagesChanged = [];
   int? gotopage;
   int pageTimer = 0;
-  // final fullScreen = false.obs;
+  //final fullScreen = false.obs;
 
   // Future<void> createInterstitialAd() async {
   //   try {
@@ -208,9 +211,10 @@ class ViewPdfController extends GetxController {
   void onInit() async {
     filePath = Get.arguments;
 
-    final Map<String, dynamic>? pdfDetails = Hive.box("pdf").get(filePath);
+    final Map<dynamic, dynamic>? pdfDetails = Hive.box("pdf").get(filePath);
     intialPageNumber = pdfDetails?['intialPageNumber'] ?? 0;
     swipehorizontal.value = pdfDetails?['swipehorizontal'] ?? false;
+    password.value = pdfDetails?['password'] ?? '';
     currentPage.value = intialPageNumber;
     pagesChanged.add(currentPage.value);
     //  intialZoomFactor = _pdfDetails?['intialZoomFactor'] ?? 1.0;
@@ -264,9 +268,10 @@ class ViewPdfController extends GetxController {
     //  bottomBannerAd.dispose();
     // rewardedInterstitialAd?.dispose();
     // }
-    final Map<String, dynamic> pdfDetails = {
+    final Map<dynamic, dynamic> pdfDetails = {
       'intialPageNumber': intialPageNumber,
       'swipehorizontal': swipehorizontal.value,
+      'password': savedPassword.isTrue ? password.value : '',
       // 'intialZoomFactor': intialZoomFactor,
     };
     // GetStorageDbService.getWrite(key: filePath, value: pdfDetails);

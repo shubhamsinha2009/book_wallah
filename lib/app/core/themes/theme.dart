@@ -17,6 +17,7 @@ class Themes {
       //labelStyle: TextStyle(color: Colors.white),
       secondaryLabelStyle: TextStyle(color: Colors.black),
     ),
+    navigationBarTheme: const NavigationBarThemeData(elevation: 0),
     dividerColor: Colors.white,
     dividerTheme: const DividerThemeData(color: Colors.white),
     inputDecorationTheme: const InputDecorationTheme(
@@ -38,10 +39,10 @@ class Themes {
       labelStyle: TextStyle(color: Colors.white),
     ),
     disabledColor: Colors.white,
-    bottomSheetTheme: const BottomSheetThemeData(
-        backgroundColor: Colors.black,
-        modalBackgroundColor: Colors.black,
-        shape: RoundedRectangleBorder(
+    bottomSheetTheme: BottomSheetThemeData(
+        backgroundColor: Colors.grey.shade800,
+        modalBackgroundColor: Colors.grey.shade900,
+        shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20)))),
     visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -55,12 +56,19 @@ class Themes {
     ),
     cardColor: Colors.black,
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(),
-    floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: Colors.black,
-      foregroundColor: Colors.white,
-    ),
-    popupMenuTheme: const PopupMenuThemeData(
-      color: Colors.black,
+    // floatingActionButtonTheme: const FloatingActionButtonThemeData(
+    //   backgroundColor: Colors.black,
+    //   foregroundColor: Colors.white,
+    // ),
+    // popupMenuTheme: const PopupMenuThemeData(
+    //   color: Colors.black,
+    // ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: Colors.white70,
+        backgroundColor: Colors.white10,
+        shadowColor: Colors.grey.shade900,
+      ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: TextButton.styleFrom(
@@ -69,16 +77,19 @@ class Themes {
         shadowColor: Colors.grey.shade900,
       ),
     ),
+    checkboxTheme: CheckboxThemeData(
+        checkColor:
+            MaterialStateColor.resolveWith((states) => getColor(states))),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
         foregroundColor: Colors.white70,
       ),
     ),
-    dialogBackgroundColor: Colors.black,
-    dialogTheme: const DialogTheme(
-      backgroundColor: Colors.black,
+    dialogBackgroundColor: Colors.grey.shade900,
+    dialogTheme: DialogTheme(
+      backgroundColor: Colors.grey.shade900,
     ),
-    snackBarTheme: const SnackBarThemeData(backgroundColor: Colors.black),
+    snackBarTheme: SnackBarThemeData(backgroundColor: Colors.grey.shade900),
     textTheme: const TextTheme(
       headline6: TextStyle(
         fontWeight: FontWeight.w700,
@@ -90,6 +101,12 @@ class Themes {
   static final ThemeData appLightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
+    bottomSheetTheme: BottomSheetThemeData(
+        backgroundColor: Colors.grey.shade200,
+        modalBackgroundColor: Colors.grey.shade200,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20), topRight: Radius.circular(20)))),
     // primaryColor: Colors.red,
     // canvasColor: Colors.red,
     // appBarTheme: const AppBarTheme(
@@ -107,13 +124,15 @@ class Themes {
 
     //  secondaryLabelStyle: TextStyle(color: Colors.white),
     // ),
+
+    navigationBarTheme: const NavigationBarThemeData(elevation: 0),
     colorScheme: const ColorScheme.light().copyWith(outline: Colors.black),
     dividerColor: Colors.black,
     dividerTheme: const DividerThemeData(color: Colors.black),
     // scaffoldBackgroundColor: Colors.redAccent,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    snackBarTheme: const SnackBarThemeData(
-      backgroundColor: Colors.blue,
+    snackBarTheme: SnackBarThemeData(
+      backgroundColor: Colors.grey.shade200,
     ),
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Colors.black,
@@ -124,6 +143,16 @@ class Themes {
         fontSize: 25,
       ),
     ),
+    // bottomSheetTheme: const BottomSheetThemeData(
+    //     backgroundColor: Colors.black54,
+    //     modalBackgroundColor: Colors.black54,
+    //     shape: RoundedRectangleBorder(
+    //         borderRadius: BorderRadius.only(
+    //             topLeft: Radius.circular(20), topRight: Radius.circular(20)))),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ButtonStyle(
+            foregroundColor:
+                MaterialStateColor.resolveWith((states) => getColor(states)))),
     textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
             foregroundColor:

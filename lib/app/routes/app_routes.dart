@@ -8,7 +8,10 @@ abstract class Routes {
   static const whatsappChat = _Paths.whatsappChat;
   static const bookPage = _Paths.bookPage;
   static const download = _Paths.download;
-  static const downloaded = _Paths.downloaded;
+//  static const downloaded = _Paths.downloaded;
+  //static const PDFS = _Paths.PDFS;
+  //static const IMPORTPDF = _Paths.IMPORTPDF;
+//  static const COINS = _Paths.COINS;
 }
 
 abstract class _Paths {
@@ -18,5 +21,8 @@ abstract class _Paths {
   static const whatsappChat = '/whatsappChat';
   static const bookPage = '/book-page';
   static const download = '/download';
-  static const downloaded = '/downloaded';
+  //static const downloaded = '/downloaded';
+  // static const PDFS = '/pdfs';
+  // static const IMPORTPDF = '/importpdf';
+//  static const COINS = '/coins';
 }

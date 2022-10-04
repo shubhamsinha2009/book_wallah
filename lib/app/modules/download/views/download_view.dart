@@ -3,8 +3,11 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../../routes/app_pages.dart';
+import '../../coins/controllers/coins_controller.dart';
+import '../../coins/views/coins_view.dart';
 import '../controllers/download_controller.dart';
 
 class DownloadView extends GetView<DownloadController> {
@@ -130,14 +133,30 @@ class DownloadView extends GetView<DownloadController> {
                         ? File(controller.bookPath).existsSync()
                             ? OutlinedButton.icon(
                                 onPressed: () {
+                                  if (Get.find<CoinsController>().coins.value >
+                                      0) {
+                                    Get.find<CoinsController>().coins.value--;
+                                    Hive.box('user').put(
+                                        'coins',
+                                        Get.find<CoinsController>()
+                                            .coins
+                                            .value);
+                                    Get.toNamed(
+                                      Routes.viewPdf,
+                                      arguments: controller.bookPath,
+                                    );
+                                  } else {
+                                    showModalBottomSheet(
+                                      isDismissible: true,
+                                      context: context,
+                                      builder: (context) {
+                                        return const CoinsView();
+                                      },
+                                    );
+                                  }
                                   // controller
                                   //     .showInterstitialAd()
                                   //     .catchError((e) {});
-
-                                  Get.toNamed(
-                                    Routes.viewPdf,
-                                    arguments: controller.bookPath,
-                                  );
                                 },
                                 icon: const Icon(Icons.folder_open),
                                 label: const Text('Open File'),

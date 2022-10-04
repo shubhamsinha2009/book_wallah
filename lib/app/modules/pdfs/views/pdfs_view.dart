@@ -1,19 +1,20 @@
 import 'dart:io';
+
 import 'package:books_wallah/app/core/extensions.dart';
+import 'package:books_wallah/app/core/services/enum/enum.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import '../../../core/services/enum/enum.dart';
 import '../../../routes/app_pages.dart';
 import '../../coins/controllers/coins_controller.dart';
 import '../../coins/views/coins_view.dart';
-import '../controllers/downloaded_controller.dart';
+import '../controllers/pdfs_controller.dart';
+import '../local_widgets/btm_sheet.dart';
 
-class DownloadedView extends GetView<DownloadedController> {
-  const DownloadedView({Key? key}) : super(key: key);
-
+class PdfsView extends GetView<PdfsController> {
+  const PdfsView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return RefreshIndicator(
@@ -72,18 +73,14 @@ class DownloadedView extends GetView<DownloadedController> {
                           return ListTile(
                             title: Text(
                               currentfile.name.split('.').first,
-                              softWrap: true,
-                              overflow: TextOverflow.visible,
                             ),
                             subtitle: Text(
-                              '${currentfile.parent.parent.parent.name} - ${currentfile.parent.parent.name} - ${currentfile.parent.name}\n${controller.getSubtitle(
+                              controller.getSubtitle(
                                 bytes: currentfile.lengthSync(),
                                 time: currentfile.lastModifiedSync(),
-                              )}',
+                              ),
                             ),
 
-                            visualDensity:
-                                VisualDensity.adaptivePlatformDensity,
                             trailing: PopupMenuButton(
                               onSelected: (value) {
                                 switch (value) {
@@ -134,7 +131,14 @@ class DownloadedView extends GetView<DownloadedController> {
                                       barrierDismissible: false,
                                     );
                                     break;
-
+                                  case FileMenu.rename:
+                                    Get.bottomSheet(
+                                        BtmSheet(
+                                          controller: controller,
+                                          file: currentfile,
+                                        ),
+                                        isScrollControlled: true);
+                                    break;
                                   default:
                                 }
                               },
@@ -144,9 +148,13 @@ class DownloadedView extends GetView<DownloadedController> {
                                     value: FileMenu.delete,
                                     child: Text('Delete'),
                                   ),
+                                  const PopupMenuItem(
+                                      value: FileMenu.rename,
+                                      child: Text('Rename'))
                                 ];
                               },
                             ),
+
                             // minLeadingWidth: 0,
                             // leading: Text('${index + 1}.',
                             //     softWrap: true, textScaleFactor: 2),
@@ -177,7 +185,7 @@ class DownloadedView extends GetView<DownloadedController> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Text(
-                            "No Downloaded Files Found ! ",
+                            "Import Pdf Files to View! ",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,

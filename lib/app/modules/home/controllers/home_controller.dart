@@ -8,6 +8,13 @@ class HomeController extends GetxController {
   // final isBottomBannerAdLoaded = false.obs;
   final changeTheme = Get.isDarkMode.obs;
   //late BannerAd bottomBannerAd;
+  final selectedBottom =
+      (Hive.box('settings').get('selectedBottom', defaultValue: 0) as int).obs;
+
+  void onBottomBarSelected(int value) {
+    selectedBottom.value = value;
+    Hive.box('settings').put('selectedBottom', value);
+  }
 
   // void _createBottomBannerAd() {
   //   bottomBannerAd = BannerAd(

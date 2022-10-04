@@ -1,9 +1,13 @@
 import 'dart:io';
 import 'dart:math';
 import 'package:books_wallah/app/data/model/chapter.dart';
+import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart';
+import '../../coins/controllers/coins_controller.dart';
+import '../../coins/views/coins_view.dart';
 import '../../home/controllers/home_controller.dart';
 
 class DownloadController extends GetxController {
@@ -78,23 +82,37 @@ class DownloadController extends GetxController {
           duration: const Duration(seconds: 5),
         ));
       } else {
-        response.stream.listen((value) {
-          _bytes.addAll(value);
-          received.value += value.length;
-        }).onDone(() async {
-          if (total.value == received.value) {
-            await file.writeAsBytes(_bytes);
-          } else {
-            getDetails.value = true;
-            received.value = 0;
-            Get.showSnackbar(GetSnackBar(
-              backgroundColor: Get.theme.snackBarTheme.backgroundColor!,
-              title: 'Download Cancelled',
-              message: 'Please Check Your Internet Connection',
-              duration: const Duration(seconds: 5),
-            ));
-          }
-        });
+        if (Get.find<CoinsController>().coins.value > 0) {
+          Get.find<CoinsController>().coins.value =
+              Get.find<CoinsController>().coins.value - 3;
+          Hive.box('user')
+              .put('coins', Get.find<CoinsController>().coins.value);
+          response.stream.listen((value) {
+            _bytes.addAll(value);
+            received.value += value.length;
+          }).onDone(() async {
+            if (total.value == received.value) {
+              await file.writeAsBytes(_bytes);
+            } else {
+              getDetails.value = true;
+              received.value = 0;
+              Get.showSnackbar(GetSnackBar(
+                backgroundColor: Get.theme.snackBarTheme.backgroundColor!,
+                title: 'Download Cancelled',
+                message: 'Please Check Your Internet Connection',
+                duration: const Duration(seconds: 5),
+              ));
+            }
+          });
+        } else {
+          showModalBottomSheet(
+            isDismissible: true,
+            context: Get.context!,
+            builder: (context) {
+              return const CoinsView();
+            },
+          );
+        }
       }
     } on SocketException catch (_) {
       getDetails.value = true;
