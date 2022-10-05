@@ -3,14 +3,13 @@ import 'package:get/get.dart';
 import '../modules/book_page/bindings/book_page_binding.dart';
 import '../modules/book_page/views/book_page_view.dart';
 import '../modules/coins/bindings/coins_binding.dart';
-import '../modules/coins/views/coins_view.dart';
+
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/download/bindings/download_binding.dart';
 import '../modules/download/views/download_view.dart';
 import '../modules/downloaded/bindings/downloaded_binding.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
-import '../modules/importpdf/bindings/importpdf_binding.dart';
 import '../modules/pdfs/bindings/pdfs_binding.dart';
 import '../modules/settings/bindings/settings_binding.dart';
 import '../modules/view_pdf/bindings/view_pdf_binding.dart';
@@ -36,7 +35,6 @@ class AppPages {
         DashboardBinding(),
         DownloadedBinding(),
         PdfsBinding(),
-        ImportpdfBinding(),
         CoinsBinding(),
       ],
     ),

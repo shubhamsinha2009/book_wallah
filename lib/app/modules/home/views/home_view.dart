@@ -1,7 +1,7 @@
 import 'package:books_wallah/app/modules/coins/controllers/coins_controller.dart';
 import 'package:books_wallah/app/modules/coins/views/coins_view.dart';
 import 'package:books_wallah/app/modules/downloaded/views/downloaded_view.dart';
-import 'package:books_wallah/app/modules/importpdf/views/importpdf_view.dart';
+
 import 'package:books_wallah/app/modules/pdfs/views/pdfs_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -84,7 +84,13 @@ class HomeView extends GetView<HomeController> {
 
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: Obx(() => controller.selectedBottom.value == 2
-          ? const ImportpdfView()
+          ? FloatingActionButton.extended(
+              onPressed: controller.pickFile,
+              label: const Text('Import Pdf'),
+              icon: const Icon(
+                Icons.file_upload_sharp,
+              ),
+            )
           : const SizedBox(
               height: 0,
               width: 0,
